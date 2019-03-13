@@ -74,7 +74,6 @@
 
 .nhsuk-carousel{
 	display:flex;
-	flex-wrap: wrap;
 	padding:0;
 
 	li{
@@ -83,7 +82,13 @@
 	}
 	.nhsuk-promo__link-wrapper{	
 		padding:1rem;
-		background-color:$color_nhsuk-blue;		
+		background-color:$color_nhsuk-blue;	
+		&:focus{
+			color:white;
+			h3,h4, .nhsuk-promo__description{
+				color:white;
+			}
+		}	
 	}
 	a, hgroup, .nhsuk-promo__description{
 			color:white;
@@ -93,11 +98,14 @@
 		margin-bottom:0;
 	}	
 	h3{
-		@include nhsuk-typography-responsive(16);
+		@include nhsuk-typography-responsive(18);
 		text-transform: uppercase;
 		}
-	h4, .nhsuk-promo__description{
-		@include nhsuk-typography-responsive(14);
+	h4{
+		@include nhsuk-typography-responsive(15);
+	}
+	.nhsuk-promo__description{
+		@include nhsuk-typography-responsive(13);
 	}
 	.nhsuk-carousel_item{
 		
