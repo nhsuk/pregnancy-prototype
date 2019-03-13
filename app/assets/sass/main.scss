@@ -11,3 +11,95 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
+
+
+.nhs-promo__level-three {
+	.nhsuk-promo__link-wrapper{
+		background-color:$color_nhsuk-blue;	
+		box-shadow: 0 4px 0 0 darken($color_nhsuk-blue,10%);
+		a, h3, .nhsuk-promo__description{
+			color:white;
+		}
+		&:hover{
+			color:white;
+			box-shadow: 0 0 0 4px $color_nhsuk-yellow;
+		}
+		&:focus{
+			color:white;
+			h3, .nhsuk-promo__description{
+				color:white;
+			}
+		}
+	}	
+}
+
+.nhs-promo__level-four {
+	.nhsuk-promo__link-wrapper{
+		background-color:$color_nhsuk-blue;	
+		box-shadow: 0 4px 0 0 darken($color_nhsuk-blue,10%);
+		a, h3, .nhsuk-promo__description{
+			color:white;
+		}
+		&:hover{
+			color:white;
+			box-shadow: 0 0 0 4px $color_nhsuk-yellow;
+		}
+		&:focus{
+			color:white;
+			h3, .nhsuk-promo__description{
+				color:white;
+			}
+		}
+	}
+}
+.nhs-promo__level-five {
+	.nhsuk-promo__link-wrapper{
+		background-color:$color_nhsuk-grey-1;	
+		box-shadow: 0 4px 0 0 darken($color_nhsuk-grey-1,10%);
+		a, h3, .nhsuk-promo__description{
+			color:white;
+		}
+		&:hover{
+			color:white;
+			box-shadow: 0 0 0 4px $color_nhsuk-yellow;
+		}
+		&:focus{
+			color:white;
+			h3, .nhsuk-promo__description{
+				color:white;
+			}
+		}
+	}
+}
+
+.nhsuk-carousel{
+	display:flex;
+	flex-wrap: wrap;
+	padding:0;
+
+	li{
+		list-style-type: none;
+		margin-bottom: 1rem;
+	}
+	.nhsuk-promo__link-wrapper{	
+		padding:1rem;
+		background-color:$color_nhsuk-blue;		
+	}
+	a, hgroup, .nhsuk-promo__description{
+			color:white;
+		}
+	h3, h4, .nhsuk-promo__description{
+		text-align: center;
+		margin-bottom:0;
+	}	
+	h3{
+		@include nhsuk-typography-responsive(16);
+		text-transform: uppercase;
+		}
+	h4, .nhsuk-promo__description{
+		@include nhsuk-typography-responsive(14);
+	}
+	.nhsuk-carousel_item{
+		
+	}
+}

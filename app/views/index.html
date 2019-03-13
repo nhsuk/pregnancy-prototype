@@ -14,6 +14,16 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><strong>Pregnancy</strong></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
+  </div>
+</nav>
 {% endblock %}
 
 {% block content %}
@@ -22,27 +32,193 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
       <!-- Change the page title here -->
       <h1>
-        NHS.UK prototype kit
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+        Pregnancy
+        <!--<span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>-->
       </h1>
-
-      <!-- Add your content here -->
-
-      <p class="nhsuk-body-l">This kit lets you rapidly create HTML prototypes of NHS services.</p>
-
-      <h2 class="nhsuk-heading-m">About this page</h2>
-
-      <p>Use this page as the index for your project.</p>
+      <p>Whatever you want to know about getting pregnant, being pregnant and giving birth you should find it here. You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
+      <p>You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
+      <div>
       
-      <p>You'll find this page in the kit at <strong>/app/views/index.html</strong>.</p>
+  </div>
+</div>
 
-      <h2 class="nhsuk-heading-m">Examples and documentation</h2>
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <hr class="nhsuk-hr"> 
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/getting-pregnant/">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Getting pregnant</h3>
+                <p class="nhsuk-promo__description">Whatever you want to know about getting pregnant, you should find it here.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/im-pregnant/">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">I'm pregnant</h3>
+                <p class="nhsuk-promo__description">All the information that you need regarding your pregnancy.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/labour-birth/">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Labour and birth</h3>
+                <p class="nhsuk-promo__description">What you need to know in order to prepare for the birth of your child.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="nhsuk-hr">
+  </div>
+</div>
 
-      <ul>
-        <li><a href="/docs/how-tos">Example pages and documentation</a></li>
-        <li><a href="https://beta.nhs.uk/service-manual/styles-components-patterns">NHS digital service manual</a>
-        </li>
-      </ul>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Pregnancy by topics</h2>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">    
+     <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Am I pregnant?</h3>
+              <p class="nhsuk-promo__description">Find out what all the signs and symptoms of pregnancy are plus when and how to get a test.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Early days</h3>
+              <p class="nhsuk-promo__description">Find out everything you will need to know and do once you've confirmed that your pregnant.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Your pregnancy antenatal care</h3>
+              <p class="nhsuk-promo__description">You should start your antenatal care as soon as possible once you know you're pregnant. Find out what's available.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Tests and scans</h3>
+              <p class="nhsuk-promo__description">During your pregnancy, you'll be offered a range of tests, including blood tests, ultrasound baby scans and tests for anomalies.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Existing health conditions</h3>
+              <p class="nhsuk-promo__description">If you have an existing health condition ther may be information that you need to consider. Find out what you need to know.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Being ill during pregnancy</h3>
+              <p class="nhsuk-promo__description">From food poisioning to chicken pox, get advice and how this may affect you and your baby.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Pregnancy-induced conditions</h3>
+              <p class="nhsuk-promo__description">Information about gestational diabetes, pre-eclampsia and Hyperemesis gravidarum (severe vomiting) can be found here.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Your health and wellbeing</h3>
+              <p class="nhsuk-promo__description">A healthy diet and lifestyle is important at any time, but especially during pregnancy.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Preparing for birth</h3>
+              <p class="nhsuk-promo__description">From pain relief, what to pack for the birth, to what happens whilst you're in labour.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <div class="block-links_list_group">
+      <h2>Popular pages</h2>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="">How to make a birth plan</a></li>
+              <li><a href="">Signs and symptoms of pregnancy</a></li>
+              <li><a href="">Routine checks and tests</a></li>
+              <li><a href="">The 12 week pregnancy dating scan</a></li>    
+            </ul>
+        </div>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+          <ul class="nhsuk-list nhsuk-list-links">
+            <li><a href="">Your pregnancy to-do list</a></li>
+            <li><a href="">Pain relief in labour</a></li>
+            <li><a href="">Foods to avoid</a></li>
+            <li><a href="">Health things you should know</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>      
+
+
 
       <!-- End of content -->
 

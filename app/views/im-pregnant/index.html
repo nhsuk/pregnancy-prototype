@@ -1,0 +1,295 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Pregnancy</a></li>
+      <li class="nhsuk-breadcrumb__item"><strong>I'm pregnant</strong></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        I'm pregnant
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Pregnancy</span>
+      </h1>
+      <p>Everything you need to know about being pregnant is here. You'll find detailed week-by-week guides and lots of information about each stage of your pregnancy.</p>
+      <div> 
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <hr class="nhsuk-hr">
+
+    <h2>Your pregnancy week by week</h2>
+ 
+    <ul class="nhsuk-carousel">
+      <li data-item-id="pregnancy_weeks" data-id="weeks_one_to_three" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>1 to 3</h4></hgroup>
+            <p class="nhsuk-promo__description">Your weeks of pregnancy are dated from the first day of your last period.</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_four_to_eight" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>4 to 8</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div> 
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_nine_to_twelve" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>9 to 12</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+          </a></li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_thirteen_to_sixteen" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>13 to 16</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_seventeen_to_twenty" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>17 to 20</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_one_to_twenty_four" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>21 to 24</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_five_to_twenty_eight" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>25 to 28</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_nine_to_thirty_two" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>29 to 32</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_three_to_thirty_six" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3 class="nhsuk-heading-s">Weeks</h3><h4>33 to 36</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_seven_to_fourty" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>37 to 40</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+      <li data-item-id="pregnancy_weeks" data-id="weeks_fourty_plus" class="nhsuk-grid-column-one-quarter">
+        <a href="" class="nhsuk-promo__link-wrapper">
+          <div class="nhsuk-carousel_item">
+            <hgroup><h3>Weeks</h3><h4>40 plus</h4></hgroup>
+            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+    
+
+
+  </div>
+</div> 
+<!--  
+ <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">   
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-four">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">The start of labour</h3>
+              <p class="nhsuk-promo__description">The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-four">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">The birth</h3>
+              <p class="nhsuk-promo__description">It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>-->
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Early days?</h3>
+          <p class="nhsuk-promo__description">Find out everything you need to know, who you need to contact, when things happen and what to expect throughout the first couple of months or your pregnancy.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <hr class="nhsuk-hr">
+    <div class="block-links_list_group">
+      <h2>Popular pages</h2>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="">Signs of labour</a></li>
+              <li><a href="">Pain relief in labour</a></li>
+              <li><a href="">What happens during labour and birth</a></li>       
+              <li><a href="">Premature labour</a></li>    
+            </ul>
+        </div>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+          <ul class="nhsuk-list nhsuk-list-links">
+            <li><a href="">Pack your bag for labour</a></li>
+            <li><a href="">At the hospital or birth centre</a></li>
+            <li><a href="">What happens straight after the birth?</a></li>
+            <li><a href="">Not sure you want to be pregnant?</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="nhsuk-hr">
+  </div>
+</div> 
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Pregnancy topics</h2>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">    
+     <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Am I pregnant?</h3>
+              <p class="nhsuk-promo__description">Find out what all the signs and symptoms of pregnancy are plus when and how to get a test.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Early days</h3>
+              <p class="nhsuk-promo__description">Find out everything you will need to know and do once you've confirmed that your pregnant.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Your pregnancy antenatal care</h3>
+              <p class="nhsuk-promo__description">You should start your antenatal care as soon as possible once you know you're pregnant. Find out what's available.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">New parents</h3>
+              <p class="nhsuk-promo__description">Everything from getting breastfeeding started, to washing and bathing your baby and changing their nappy</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Twins</h3>
+              <p class="nhsuk-promo__description">Find out all you need to know about twins and multiple births.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Newborns</h3>
+              <p class="nhsuk-promo__description">Get to know your newborn and find out what to expect in the first few days.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
+</div>
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
