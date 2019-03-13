@@ -45,98 +45,101 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
     <h2>Your pregnancy week by week</h2>
  
-    <ul class="nhsuk-carousel">
-      <li data-item-id="pregnancy_weeks" data-id="weeks_one_to_three" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>1 to 3</h4></hgroup>
-            <p class="nhsuk-promo__description">Your weeks of pregnancy are dated from the first day of your last period.</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_four_to_eight" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>4 to 8</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div> 
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_nine_to_twelve" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>9 to 12</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-          </a></li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_thirteen_to_sixteen" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>13 to 16</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_seventeen_to_twenty" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>17 to 20</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_one_to_twenty_four" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>21 to 24</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_five_to_twenty_eight" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>25 to 28</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_nine_to_thirty_two" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>29 to 32</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_three_to_thirty_six" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3 class="nhsuk-heading-s">Weeks</h3><h4>33 to 36</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_seven_to_fourty" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>37 to 40</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-      <li data-item-id="pregnancy_weeks" data-id="weeks_fourty_plus" class="nhsuk-grid-column-one-quarter">
-        <a href="" class="nhsuk-promo__link-wrapper">
-          <div class="nhsuk-carousel_item">
-            <hgroup><h3>Weeks</h3><h4>40 plus</h4></hgroup>
-            <p class="nhsuk-promo__description">Quo usque tandem abutere, Catilina, patientia nostra?</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-    
+  [carousel]
 
-
+    <div class="nhsuk-carousel__container">
+      <div class="nhsuk-carousel__vertical-strip">
+        <ul class="nhsuk-carousel">
+          <li data-item-id="pregnancy_weeks" data-id="weeks_one_to_three" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>1 to 3</h4></hgroup>
+                <p class="nhsuk-promo__description">Your weeks of pregnancy are dated from the first day of your last period.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_four_to_eight" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>4 to 8</h4></hgroup>
+                <p class="nhsuk-promo__description">In the first 4 weeks of pregnancy, you probably won't notice any symptoms.</p>
+              </div> 
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_nine_to_twelve" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>9 to 12</h4></hgroup>
+                <p class="nhsuk-promo__description">You'll be offered various tests and scans including screening to find the baby's chance of having Down's syndrome.</p>
+              </div>
+              </a></li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_thirteen_to_sixteen" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>13 to 16</h4></hgroup>
+                <p class="nhsuk-promo__description">You may have backache in pregnancy as your womb gets heavier and pregnancy hormones affect the ligaments in your body.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_seventeen_to_twenty" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>17 to 20</h4></hgroup>
+                <p class="nhsuk-promo__description">Abdominal or stomach pain in pregnancy are common and some women also get headaches in pregnancy which are common.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_one_to_twenty_four" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>21 to 24</h4></hgroup>
+                <p class="nhsuk-promo__description">Not everybody gets stretch marks, but if you do, they will probably start becoming noticeable when you're around 22 to 24 weeks pregnant.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_five_to_twenty_eight" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>25 to 28</h4></hgroup>
+                <p class="nhsuk-promo__description">Download a birth plan template to fill in and save, stating your preferences for labour and birth.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_nine_to_thirty_two" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>29 to 32</h4></hgroup>
+                <p class="nhsuk-promo__description">You may find it hard to sleep because you can't get comfortable. You might also find you need to pee a lot.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_three_to_thirty_six" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3 class="nhsuk-heading-s">Weeks</h3><h4>33 to 36</h4></hgroup>
+                <p class="nhsuk-promo__description">Pre-eclampsia is a condition that affects some women in pregnancy, usually after 20 weeks, and it can be serious.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_seven_to_fourty" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>37 to 40</h4></hgroup>
+                <p class="nhsuk-promo__description">Most women go into labour between 38 and 42 weeks of pregnancy.</p>
+              </div>
+            </a>
+          </li>
+          <li data-item-id="pregnancy_weeks" data-id="weeks_fourty_plus" class="nhsuk-grid-column-one-quarter">
+            <a href="" class="nhsuk-promo__link-wrapper">
+              <div class="nhsuk-carousel_item">
+                <hgroup><h3>Weeks</h3><h4>40 plus</h4></hgroup>
+                <p class="nhsuk-promo__description">Most women go into labour naturally by the time they're 42 weeks pregnant.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div> 
+    </div> 
   </div>
 </div> 
 <!--  
