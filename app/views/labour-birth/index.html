@@ -2,6 +2,8 @@
 ADDING CUSTOM CSS
 Add your custom CSS/Sass to /app/assets/sass/main.scss
 -->
+{% set pageTitle = "Labour and birth" %}
+{% set parentPage = "Pregnancy" %}
 
 
 <!-- Extends the layout from /app/views/layouts/layout.html -->
@@ -14,25 +16,15 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Pregnancy</a></li>
-      <li class="nhsuk-breadcrumb__item"><strong>Labour and birth</strong></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
-  </div>
-</nav>
+  {% include "includes/breadcrumb_levelfour.html" %}
 {% endblock %}
 
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h1>
-        Labour and birth topics
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Pregnancy</span>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
       </h1>
       <p>Find out all you need to know including signs of labour, where you can have your baby, how to prepare for the birth and you and your baby after the birth..</p>
       <div> 
@@ -96,7 +88,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <h2>Labour and birth</h2>
+    <h2>{{ pageTitle }} topics</h2>
 
     <div class="nhsuk-grid-row nhsuk-promo-group">    
      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">

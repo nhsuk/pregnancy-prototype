@@ -2,37 +2,28 @@
 ADDING CUSTOM CSS
 Add your custom CSS/Sass to /app/assets/sass/main.scss
 -->
-
+{% set pageTitle = "I'm pregnant" %}
+{% set parentPage = "Pregnancy" %}
 
 <!-- Extends the layout from /app/views/layouts/layout.html -->
 {% extends 'layouts/layout.html' %}
 
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+  I'm pregnant
 {% endblock %}
 
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container">
-    <ol class="nhsuk-breadcrumb__list">
-      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></div>
-      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></div>
-      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Pregnancy</a></div>
-      <div class="nhsuk-breadcrumb__item"><strong>I'm pregnant</strong></div>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
-  </div>
-</nav>
+  {% include "includes/breadcrumb_levelfour.html" %}
 {% endblock %}
 
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h1>
-        I'm pregnant
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Pregnancy</span>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
       </h1>
       <p>Everything you need to know about being pregnant is here. You'll find detailed week-by-week guides and lots of information about each stage of your pregnancy.</p>
       <div> 
@@ -45,39 +36,47 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
     <h2>Your pregnancy week by week</h2>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
       $('.nhsuk-carousel').slick({
         infinite: true,
-        //slidesToShow: 5,
-        //slidesToScroll: 3,
+        mobileFirst : true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
           {
             breakpoint: 990,
             settings: {
               slidesToShow: 4,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
+              slidesToScroll: 4,
+              infinite: true
             }
           },
           {
             breakpoint: 769,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 2
+              slidesToScroll: 3
             }
           },
           {
             breakpoint: 641,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 2
             }
           },
           {
             breakpoint: 320,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 0,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -101,7 +100,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>9 to 12</h4></hgroup>
-                <p class="nhsuk-promo__description"><strong>Important:</strong> You'll be offered various tests and scans including screening to find the baby's chance of having Down's syndrome.</p>
+                <p class="nhsuk-promo__description"><strong>IMPORTANT:</strong> You'll be offered various tests and scans including screening to find the baby's chance of having Down's syndrome.</p>
               </div>
             </a>
           </div>
@@ -171,50 +170,19 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
             </a>
           </div>
         </div>
-        <!--<div class="nhsuk-carousel__arrows">
-          <button class="nhsuk-carousel__arrow nhsuk-carousel__arrow--previous" id="js-arrow-previous">Previous</button>
-          <button class="nhsuk-carousel__arrow nhsuk-carousel__arrow--next" id="js-arrow-next">Next</button>
-        </div>-->
       </div> 
     </div> 
 
 
 </div> 
 <hr class="nhsuk-hr">
-<!--  
- <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">   
-    <div class="nhsuk-grid-row nhsuk-promo-group">
-      <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-four">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">The start of labour</h3>
-              <p class="nhsuk-promo__description">The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-four">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">The birth</h3>
-              <p class="nhsuk-promo__description">It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>  
-  </div>
-</div>-->
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <div class="nhsuk-promo">
       <a class="nhsuk-promo__link-wrapper" href="https://www.nhs.uk">
         <div class="nhsuk-promo__content">
           <h3 class="nhsuk-promo__heading">Early days?</h3>
-          <p class="nhsuk-promo__description">Find out everything you need to know, who you need to contact, when things happen and what to expect throughout the first couple of months or your pregnancy.</p>
+          <p class="nhsuk-promo__description">Find out everything you need to know, who you need to contact, what you need to do, when things happen and what to expect throughout the first couple of months.</p>
         </div>
       </a>
     </div>
@@ -249,7 +217,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <h2>Pregnancy topics</h2>
+    <h2>{{ pageTitle }} topics</h2>
 
     <div class="nhsuk-grid-row nhsuk-promo-group">    
      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
