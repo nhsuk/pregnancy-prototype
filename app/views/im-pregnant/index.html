@@ -17,10 +17,10 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Pregnancy</a></li>
-      <li class="nhsuk-breadcrumb__item"><strong>I'm pregnant</strong></li>
+      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></div>
+      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A - Z</a></div>
+      <div class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Pregnancy</a></div>
+      <div class="nhsuk-breadcrumb__item"><strong>I'm pregnant</strong></div>
     </ol>
     <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
   </div>
@@ -44,104 +44,143 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
     <hr class="nhsuk-hr">
 
     <h2>Your pregnancy week by week</h2>
- 
-  [carousel]
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.nhsuk-carousel').slick({
+        infinite: true,
+        //slidesToShow: 5,
+        //slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 990,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 641,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+</script>
     <div class="nhsuk-carousel__container">
-      <div class="nhsuk-carousel__vertical-strip">
-        <ul class="nhsuk-carousel">
-          <li data-item-id="pregnancy_weeks" data-id="weeks_one_to_three" class="nhsuk-grid-column-one-quarter">
+       <div class="nhsuk-carousel regular slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_one_to_eight" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
-                <hgroup><h3>Weeks</h3><h4>1 to 3</h4></hgroup>
-                <p class="nhsuk-promo__description">Your weeks of pregnancy are dated from the first day of your last period.</p>
-              </div>
-            </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_four_to_eight" class="nhsuk-grid-column-one-quarter">
-            <a href="" class="nhsuk-promo__link-wrapper">
-              <div class="nhsuk-carousel_item">
-                <hgroup><h3>Weeks</h3><h4>4 to 8</h4></hgroup>
-                <p class="nhsuk-promo__description">In the first 4 weeks of pregnancy, you probably won't notice any symptoms.</p>
+                <hgroup><h3>Weeks</h3><h4>1 to 8</h4></hgroup>
+                <p class="nhsuk-promo__description">In the first 4 weeks of pregnancy, you probably won't notice any symptoms. Your weeks of pregnancy are dated from the first day of your last period.</p>
               </div> 
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_nine_to_twelve" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_nine_to_twelve" class="nhsuk-carousel__pane nhsuk-carousel__pane-milestone">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>9 to 12</h4></hgroup>
-                <p class="nhsuk-promo__description">You'll be offered various tests and scans including screening to find the baby's chance of having Down's syndrome.</p>
+                <p class="nhsuk-promo__description"><strong>Important:</strong> You'll be offered various tests and scans including screening to find the baby's chance of having Down's syndrome.</p>
               </div>
-              </a></li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_thirteen_to_sixteen" class="nhsuk-grid-column-one-quarter">
+            </a>
+          </div>
+
+          <div data-item-id="pregnancy_weeks" data-id="weeks_thirteen_to_sixteen" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>13 to 16</h4></hgroup>
                 <p class="nhsuk-promo__description">You may have backache in pregnancy as your womb gets heavier and pregnancy hormones affect the ligaments in your body.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_seventeen_to_twenty" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_seventeen_to_twenty" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>17 to 20</h4></hgroup>
                 <p class="nhsuk-promo__description">Abdominal or stomach pain in pregnancy are common and some women also get headaches in pregnancy which are common.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_one_to_twenty_four" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_twenty_one_to_twenty_four" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>21 to 24</h4></hgroup>
                 <p class="nhsuk-promo__description">Not everybody gets stretch marks, but if you do, they will probably start becoming noticeable when you're around 22 to 24 weeks pregnant.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_five_to_twenty_eight" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_twenty_five_to_twenty_eight" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>25 to 28</h4></hgroup>
                 <p class="nhsuk-promo__description">Download a birth plan template to fill in and save, stating your preferences for labour and birth.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_twenty_nine_to_thirty_two" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_twenty_nine_to_thirty_two" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>29 to 32</h4></hgroup>
                 <p class="nhsuk-promo__description">You may find it hard to sleep because you can't get comfortable. You might also find you need to pee a lot.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_three_to_thirty_six" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_thirty_three_to_thirty_six" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3 class="nhsuk-heading-s">Weeks</h3><h4>33 to 36</h4></hgroup>
                 <p class="nhsuk-promo__description">Pre-eclampsia is a condition that affects some women in pregnancy, usually after 20 weeks, and it can be serious.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_thirty_seven_to_fourty" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_thirty_seven_to_fourty" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>37 to 40</h4></hgroup>
                 <p class="nhsuk-promo__description">Most women go into labour between 38 and 42 weeks of pregnancy.</p>
               </div>
             </a>
-          </li>
-          <li data-item-id="pregnancy_weeks" data-id="weeks_fourty_plus" class="nhsuk-grid-column-one-quarter">
+          </div>
+          <div data-item-id="pregnancy_weeks" data-id="weeks_fourty_plus" class="nhsuk-carousel__pane">
             <a href="" class="nhsuk-promo__link-wrapper">
               <div class="nhsuk-carousel_item">
                 <hgroup><h3>Weeks</h3><h4>40 plus</h4></hgroup>
                 <p class="nhsuk-promo__description">Most women go into labour naturally by the time they're 42 weeks pregnant.</p>
               </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <!--<div class="nhsuk-carousel__arrows">
+          <button class="nhsuk-carousel__arrow nhsuk-carousel__arrow--previous" id="js-arrow-previous">Previous</button>
+          <button class="nhsuk-carousel__arrow nhsuk-carousel__arrow--next" id="js-arrow-next">Next</button>
+        </div>-->
+      </div> 
     </div> 
-    </div> 
-  </div>
+
+
 </div> 
+<hr class="nhsuk-hr">
 <!--  
  <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">   
@@ -189,18 +228,18 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <h2>Popular pages</h2>
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
             <ul class="nhsuk-list nhsuk-list-links">
-              <li><a href="">Signs of labour</a></li>
-              <li><a href="">Pain relief in labour</a></li>
-              <li><a href="">What happens during labour and birth</a></li>       
-              <li><a href="">Premature labour</a></li>    
+              <div><a href="">Signs of labour</a></div>
+              <div><a href="">Pain relief in labour</a></div>
+              <div><a href="">What happens during labour and birth</a></div>       
+              <div><a href="">Premature labour</a></div>    
             </ul>
         </div>
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
           <ul class="nhsuk-list nhsuk-list-links">
-            <li><a href="">Pack your bag for labour</a></li>
-            <li><a href="">At the hospital or birth centre</a></li>
-            <li><a href="">What happens straight after the birth?</a></li>
-            <li><a href="">Not sure you want to be pregnant?</a></li>
+            <div><a href="">Pack your bag for labour</a></div>
+            <div><a href="">At the hospital or birth centre</a></div>
+            <div><a href="">What happens straight after the birth?</a></div>
+            <div><a href="">Not sure you want to be pregnant?</a></div>
           </ul>
         </div>
       </div>
