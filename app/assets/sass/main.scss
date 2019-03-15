@@ -12,6 +12,9 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+// ==============================
+// hub promos
+// ==============================
 
 .nhs-promo__level-three {
 	.nhsuk-promo__link-wrapper{
@@ -72,6 +75,9 @@
 	}
 }
 
+// ==============================
+// week to week navigation
+// ==============================
 .nhsuk-week__pagination{
 	display:flex;
 	padding:0;
@@ -111,15 +117,9 @@
 
 }
 
-.nhsuk-navigation__contextual-links{
-	background:$color_nhsuk-white;
-	padding: nhsuk-spacing(5) nhsuk-spacing(4) nhsuk-spacing(4); /* [5] */
-	@include nhsuk-responsive-margin(7, 'bottom');
-  	@include nhsuk-responsive-margin(7, 'top');
-  	border: 1px solid transparent; /* [2] */
-	box-shadow: 0 4px 0 0 $color_nhsuk-grey-4;
-}
-
+// ==============================
+// carousel week navigation
+// ==============================
 .nhsuk-carousel__container{
 	padding:0;
 	position:relative;
@@ -202,8 +202,9 @@
 	}
 }
 
-
-/* Slider */
+// ==============================
+// slick slider css
+// ==============================
 
 .slick-slider {
     position: relative;
@@ -242,15 +243,6 @@
         cursor: hand;
     }
 }
-/*.slick-slider .slick-track,
-.slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}*/
-
 .slick-track {
     position: relative;
     left: 0;
@@ -311,23 +303,12 @@
     display: none;
 }
 
-@charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
 {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
-/* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -363,15 +344,11 @@
     	}
     }
 }
-
-
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
     opacity: .25;
 }
-
-
 .slick-prev{
     left:0;
     &:before{
@@ -386,8 +363,6 @@
     	content: '>';
     }
 }
-
-
 .slick-next
 {
     right: 0;
@@ -403,8 +378,6 @@
     	content: '<';
     }
 }
-
-
 /* Dots */
 .slick-dots{
 	display: none;
@@ -414,4 +387,31 @@
 {
     //margin-bottom: 30px;
 }
+
+// ==============================
+// articles related
+// ==============================
+
+.nhsuk-navigation__contextual-links{
+	background:$color_nhsuk-white;
+	padding: nhsuk-spacing(5) nhsuk-spacing(4) nhsuk-spacing(4); /* [5] */
+	@include nhsuk-responsive-margin(7, 'bottom');
+  	@include nhsuk-responsive-margin(7, 'top');
+  	border: 1px solid transparent; /* [2] */
+	box-shadow: 0 4px 0 0 $color_nhsuk-grey-4;
+}
+
+.nksuk-core_video{
+	padding: 0.25rem;
+	background-color: $color_nhsuk-white;
+}
+.nhsuk-core_video--information{
+	
+	p{
+		@include nhsuk-typography-responsive(14);
+		margin:0.25rem;
+	}
+}
+
+    
 
