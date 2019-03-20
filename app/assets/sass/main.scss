@@ -121,7 +121,7 @@
 // carousel week navigation
 // ==============================
 .nhsuk-carousel__container{
-	padding:0;
+	/*padding:0;
 	position:relative;
 	width:100%;
 	overflow:hidden;
@@ -143,7 +143,7 @@
 	&:after{
 		right:0;
 		margin-right:-5%;
-	}
+	}*/
 	.nhsuk-carousel{
 		display:flex;
 		flex-wrap: wrap;
@@ -155,9 +155,6 @@
 		display:flex;
 		align-items: stretch;
 		height:100%;
-		&:first-child{
-			//margin:0 0 0 0;	
-		}
 		.nhsuk-promo__link-wrapper{	
 			height:100%;
 			padding:1rem;
@@ -322,7 +319,7 @@
     width: 40px;
     height: 40px;
     padding: 0;
-     top: 50%;
+    bottom: -1rem;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -331,10 +328,11 @@
     border: none;
     outline: none;
     &:before{
-    	font-size: 20px;
+    	font-size: 25px;
 	    line-height: 1;
 	    opacity: 1;
 	    color: white;
+	    font-weight: bold;
 	    -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
     }
@@ -350,7 +348,7 @@
     opacity: .25;
 }
 .slick-prev{
-    left:0;
+    right: 40px;
     &:before{
     	content: '<';
     }
@@ -365,7 +363,7 @@
 }
 .slick-next
 {
-    right: 0;
+    right: 8px;
     &:before{
     	content: '>';
     }
@@ -406,12 +404,18 @@
 	background-color: $color_nhsuk-white;
 }
 .nhsuk-core_video--information{
-	
+	padding: nhsuk-spacing(5) nhsuk-spacing(4) nhsuk-spacing(4); /* [5] */
+	a{
+		margin:0 0 1rem 0;
+		display: block;
+	}
 	p{
 		@include nhsuk-typography-responsive(14);
-		margin:0.25rem;
+		margin:0 0 0.125rem 0;
 	}
 }
+
+
 
     
 

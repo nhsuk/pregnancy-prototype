@@ -1,0 +1,86 @@
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+  $(document).on('ready', function() {
+    $('.nhsuk-carousel').slick({
+      infinite: true,mobileFirst : true,dots: false,slidesToShow: 4,slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: { slidesToShow: 4, slidesToScroll: 4, infinite: true}
+        },
+        {
+          breakpoint: 769,
+          settings: { slidesToShow: 3, slidesToScroll: 3}
+        },
+        {
+          breakpoint: 641,
+          settings: { slidesToShow: 3, slidesToScroll: 2}
+        },
+        {
+          breakpoint: 320,
+          settings: { slidesToShow: 2, slidesToScroll: 1}
+        },
+        {
+          breakpoint: 0,
+          settings: { slidesToShow: 1, slidesToScroll: 1}
+        }
+      ]
+    });
+  });
+</script>
+<div class="nhsuk-carousel__container">
+  <div class="nhsuk-carousel regular slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+    <div data-item-id="pregnancy_weeks" data-id="weeks_zero_to_three" class="nhsuk-carousel__pane">
+      <a href="/im-pregnant/weeks-one-to-eight/weeks-zero-to-three" class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Weeks</h3><h4>0 to 3</h4></hgroup>
+          <p class="nhsuk-promo__description">The first thing most women notice is that their period doesn't arrive.</p>
+        </div> 
+      </a>
+    </div>
+    <div data-item-id="pregnancy_weeks" data-id="week_four" class="nhsuk-carousel__pane">
+      <a href="/im-pregnant/weeks-one-to-eight/week-four" class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Weeks</h3><h4>4</h4></hgroup>
+          <p class="nhsuk-promo__description">In the first 4 weeks of pregnancy, you probably won't notice any symptoms.</p>
+        </div>
+      </a>
+    </div>
+
+    <div data-item-id="pregnancy_weeks" data-id="week_five" class="nhsuk-carousel__pane">
+      <a href="/im-pregnant/weeks-one-to-eight/week-five" class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Week</h3><h4>5</h4></hgroup>
+          <p class="nhsuk-promo__description">Contact your GP or your preferred maternity service promptly once you know you're pregnant.</p>
+        </div>
+      </a>
+    </div>
+    <div data-item-id="pregnancy_weeks" data-id="week_six" class="nhsuk-carousel__pane">
+      <div class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Week</h3><h4>6</h4></hgroup>
+          <p class="nhsuk-promo__description">It's normal to feel a range of emotions in pregnancy and everyone's experience is different.</p>
+        </div>
+      </div>
+    </div>
+    <div data-item-id="pregnancy_weeks" data-id="week_seven" class="nhsuk-carousel__pane">
+      <div class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Week</h3><h4>7</h4></hgroup>
+          <p class="nhsuk-promo__description">Some pregnant women start to feel sick or tired, or have other minor pregnancy problems for a few weeks around this time.</p>
+        </div>
+      </div>
+    </div>
+    <div data-item-id="pregnancy_weeks" data-id="week_eight" class="nhsuk-carousel__pane">
+      <div class="nhsuk-promo__link-wrapper">
+        <div class="nhsuk-carousel_item">
+          <hgroup><h3>Week</h3><h4>8</h4></hgroup>
+          <p class="nhsuk-promo__description">You'll probably have missed your second period. But some women experience a little bleeding in pregnancy..</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div> 

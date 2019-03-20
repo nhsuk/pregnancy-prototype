@@ -2,8 +2,8 @@
 ADDING CUSTOM CSS
 Add your custom CSS/Sass to /app/assets/sass/main.scss
 -->
-{% set pageTitle = "I'm pregnant" %}
-{% set parentPage = "Pregnancy" %}
+{% set pageTitle = "Weeks 0 to 8" %}
+{% set parentPage = "I'm pregnant" %}
 
 <!-- Extends the layout from /app/views/layouts/layout.html -->
 {% extends 'layouts/layout.html' %}
@@ -16,7 +16,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  {% include "includes/breadcrumb_levelfour.html" %}
+  {% include "includes/breadcrumb_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -26,7 +26,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
         {{ pageTitle }}
         <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
       </h1>
-      <p>Everything you need to know about being pregnant is here. You'll find detailed week-by-week guides and lots of information about each stage of your pregnancy.</p>
+      <p>Your weeks of pregnancy are dated from the first day of your last period. This means that in the first 2 weeks or so, you aren't actually pregnant – your body is preparing for ovulation (releasing an egg from one of your ovaries) as usual.</p>
       <div> 
   </div>
 </div>
@@ -35,7 +35,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-column-full">
     <hr class="nhsuk-hr">
     <h2>Your pregnancy week by week</h2>
-    {% include "includes/carousel.html" %}
+    {% include "includes/carousel_week_zero_to_eight.html" %}
     
   </div> 
 </div> 
@@ -75,7 +75,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   </div>
 </div> 
 
-<div class="nhsuk-grid-row">
+<!--<div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <h2>{{ pageTitle }} topics</h2>
     <div class="nhsuk-grid-row nhsuk-promo-group">    
@@ -98,7 +98,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
     <hr class="nhsuk-hr">
   </div>
-</div>
+</div>-->
 
 
       <!-- End of content -->

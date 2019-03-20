@@ -1,0 +1,62 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+{% set pageTitle = "Tests and scans" %}
+{% set parentPage = "I'm pregnant" %}
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS - Pregnancy - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+{% include "includes/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>{{ pageTitle }}
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+      <p>During your pregnancy, you'll be offered a range of tests, including blood tests and ultrasound baby scans. These are to monitor you and your baby.</p>
+      <p>All pregnant women in England are offered an ultrasound scan at around <strong>8 to 14 weeks</strong> of pregnancy. This is called the dating scan.</p>
+      <p>All pregnant women in England are offered a screening test for Down's syndrome, Edwards' syndrome and Patau's syndrome between <strong>10 and 14 weeks</strong> of pregnancy. </p>
+      <p>A detailed ultrasound scan, sometimes called the mid-pregnancy scan, is usually carried out when you're between <strong>18 and 21 weeks</strong> pregnant.</p>
+      <div>
+    </div>
+  </div>
+
+  
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <div class="block-links_list_group">
+        <h2>All pages about {{ pageTitle }}</h2>
+          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+            <h3>Scans</h3>
+              <ul class="nhsuk-list nhsuk-list-links">
+                <li>{% include "includes/links/twelve_week_scan.html" %}</li>           
+                <li>{% include "includes/links/test_downs.html" %}</li>
+                <li><a href="#">Anomolies/mid-pregnancy scan</q></li>
+                <li><a href="#">Pregnancy ultrasound scans</a></li>    
+              </ul>
+          </div>
+          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+            <h3>Tests</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li>Antenatal checks and tests</li> 
+              <li><a href="#">If antenatal screening tests find something</a></li>
+              <li><a href="#">Amniocentesis tests</a></li>
+              <li><a href="#">Chorionic villus sampling</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>      
+
+{% endblock %}

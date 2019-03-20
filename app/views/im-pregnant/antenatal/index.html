@@ -1,0 +1,209 @@
+<!-- 
+ADDING CUSTOM CSS
+Add your custom CSS/Sass to /app/assets/sass/main.scss
+-->
+{% set pageTitle = "Antenatal care" %}
+{% set parentPage = "I'm pregnant" %}
+
+
+<!-- Extends the layout from /app/views/layouts/layout.html -->
+{% extends 'layouts/layout.html' %}
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+  {% include "includes/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+      </h1>
+      <p>You'll have a number of antenatal appointments during your pregnancy, and you'll see a midwife or sometimes an obstetrician (doctor specialising in pregnancy).They will check the health of you and your baby, give you useful information – for example, about a healthy pregnancy diet or antenatal screening – and answer any questions. </p>
+
+      <p>Pregnant employees have the right to paid time off for antenatal care.</p>
+      <p>This page lists the appointments you'll be offered, and when you should have them. If you're pregnant with your first baby, you'll have more appointments than women who already have children.</p>
+      <div> 
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <section>
+      <hr class="nhsuk-hr"> 
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-five">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">A</h3>
+                <p class="nhsuk-promo__description">promo text</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item  nhs-promo__level-five">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">B</h3>
+                <p class="nhsuk-promo__description">Promo text</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+
+
+
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <section>
+      <h2>Early days - Things to think about</h2>
+      <p>These are the things that you should consider and need to be thinking about.</p>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3>
+        <ul>
+          <li><a href="" title="">12-week pregnancy dating scan</a></li>
+          <li><a href="" title="">Screening for Down's, Edwards' and Patau's syndromes</a></li>
+          <li><a href="" title="">Where to give birth: the options</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <hr class="nhsuk-hr">
+    <div class="block-links_list_group">
+      <h2>Popular pages</h2>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="">Signs of labour</a></li>
+              <li><a href="">Pain relief in labour</a></li>
+              <li><a href="">What happens during labour and birth</a></li>       
+              <li><a href="">Premature labour</a></li>    
+            </ul>
+        </div>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+          <ul class="nhsuk-list nhsuk-list-links">
+            <li><a href="">Pack your bag for labour</a></li>
+            <li><a href="">At the hospital or birth centre</a></li>
+            <li><a href="">What happens straight after the birth?</a></li>
+            <li><a href="">Premature or ill babies</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="nhsuk-hr">
+  </div>
+</div> 
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>{{ pageTitle }} topics</h2>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">    
+     <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Preparing for birth</h3>
+              <p class="nhsuk-promo__description">From pain relief, what to pack for the birth, to what happens whilst you're in labour.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Pain relief</h3>
+              <p class="nhsuk-promo__description">It can help to learn about all the ways you can relieve the pain for you and whoever is going to be with you during your labour.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Complications during birth</h3>
+              <p class="nhsuk-promo__description">From breech birth, caesarean section and forcep deliveries.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">New parents</h3>
+              <p class="nhsuk-promo__description">Everything from getting breastfeeding started, to washing and bathing your baby and changing their nappy</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Twins</h3>
+              <p class="nhsuk-promo__description">Find out all you need to know about twins and multiple births.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="">
+            <div class="nhsuk-promo__content">
+              <h3 class="nhsuk-promo__heading">Newborns</h3>
+              <p class="nhsuk-promo__description">Get to know your newborn and find out what to expect in the first few days.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
+</div>
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
