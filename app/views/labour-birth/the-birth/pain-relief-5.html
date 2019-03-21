@@ -1,0 +1,77 @@
+{% set pageTitle = "Pain Relief" %}
+{% set parentPage = "The birth" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+ NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+   {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/labour-birth/the-birth/pain-relief",
+            text: "Your pain relief options"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-2",
+            text: "Gas and air (Entonox) for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-3",
+            text: "Injections and epidurals for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-4",
+            text: "Self help, water and TENS"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-5",
+            text: "Alternative methods of pain relief",
+            current: "true"
+          }
+        ]
+      }) }}
+
+      
+      <h2>Alternative methods of labour pain relief</h2>
+      <p>Some women may choose alternative treatments such as acupuncture, aromatherapy, homeopathy, hypnosis, massage and reflexology. Most of these techniques aren't proven to provide effective pain relief.</p>
+
+      <p>If you'd like to use any of these methods, it's important to discuss them with your midwife or doctor and let the hospital know beforehand. Most hospitals don't offer them for pain relief during labour.</p>
+
+      <p>If you want to try any of these techniques, make sure the practitioner is properly trained and experienced. Learn more about complementary and alternative medicines and how they're regulated.</p>
+
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare1"></a>
+        <ul>
+          <li><a href="#prepare1" title="">NHS - Complementary and alternative medicine</a></li>
+          <li><a href="#prepare1" title="">NHS - Find Maternity services services near you</a></li>
+        </ul>
+      </div>
+      {% include "includes/videos/vid_pain_relief.html" %}
+
+      
+
+      {{ pagination({
+        "previousUrl": "/labour-birth/the-birth/pain-relief-4",
+        "previousPage": "Self help, water and TENS"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

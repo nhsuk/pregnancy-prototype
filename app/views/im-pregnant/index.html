@@ -11,7 +11,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  I'm pregnant
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 
 <!-- Breadcrumb goes inside this block -->
@@ -27,16 +27,14 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
         <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
       </h1>
       <p>Everything you need to know about being pregnant is here. You'll find detailed week-by-week guides and lots of information about each stage of your pregnancy.</p>
-      <div> 
   </div>
 </div>
+<hr class="nhsuk-hr">
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <hr class="nhsuk-hr">
     <h2>Your pregnancy week by week</h2>
     {% include "includes/carousel.html" %}
-    
   </div> 
 </div> 
 <hr class="nhsuk-hr">
@@ -77,7 +75,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <h2>{{ pageTitle }} topics</h2>
+    <h2>{{ pageTitle }} topics</h2><a name="topic"></a>
     <div class="nhsuk-grid-row nhsuk-promo-group">    
       {% include "includes/promos/promo_amipregnant.html" %}
       {% include "includes/promos/promo_antenatalcare.html" %}
@@ -86,13 +84,11 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
     <div class="nhsuk-grid-row nhsuk-promo-group">
       {% include "includes/promos/promo_food.html" %}
-      {% include "includes/promos/promo_pain.html" %}
       {% include "includes/promos/promo_existinghealth.html" %}
     </div>
 
     <div class="nhsuk-grid-row nhsuk-promo-group">
       {% include "includes/promos/promo_illness.html" %}
-      {% include "includes/promos/promo_pain.html" %}
       {% include "includes/promos/promo_existinghealth.html" %}
     </div>
 

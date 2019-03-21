@@ -1,0 +1,128 @@
+{% set pageTitle = "Pain Relief" %}
+{% set parentPage = "The birth" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+ NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+   {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/labour-birth/the-birth/pain-relief",
+            text: "Your pain relief options"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-2",
+            text: "Gas and air (Entonox) for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-3",
+            text: "Injections and epidurals for labour",
+            current: "true"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-4",
+            text: "Self help, water and TENS"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-5",
+            text: "Alternative methods of pain relief"
+          }
+        ]
+      }) }}
+
+      <h2>Pethidine injections in labour</h2>
+      <p>This is an injection of the drug pethidine into your thigh or buttock to relieve pain. It can also help you to relax. Sometimes, less commonly, a drug called diamorphine is used.</p>
+
+      <p>It takes about 20 minutes to work after the injection. The effects last between 2 and 4 hours, so wouldn't be recommended if you're getting close to the pushing (second) stage of labour.</p>
+
+      <h3>Side effects</h3>
+      <p>There are some side effects to be aware of:
+        <ul>
+          <li>it can make some women feel woozy, sick and forgetful</li>
+          <li>if pethidine or diamorphine are given too close to the time of delivery, they may affect the baby's breathing – if this happens, another</li> 
+          <li>drug to reverse the effect will be given</li>
+          <li>the drugs can interfere with the baby's first feed</li>
+        </ul>
+      </p>
+      
+      <h2>Epidural</h2>
+      <p>An epidural is a special type of local anaesthetic. It numbs the nerves that carry the pain impulses from the birth canal to the brain. It shouldn't make you sick or drowsy.</p>
+
+      <p>For most women, an epidural gives complete pain relief. It can be helpful for women who are having a long or particularly painful labour.</p>
+
+      <p>An anaesthetist is the only person who can give an epidural, so it won't be available at home. If you think you might want one, check whether anaesthetists are always available at your hospital.</p>
+
+      <p>How much you can move your legs after en epidural depends on the local anaesthetic used. Some units offer "mobile" epidurals, which means you can walk around.</p>
+
+      <p>However, this also requires the baby's heart rate to be monitored remotely (by telemetry) and many units don't have the equipment to do this. Ask your midwife if mobile epidural is available in your local unit.</p>
+
+      <p>An epidural can provide very good pain relief, but it's not always 100% effective in labour. The Obstetric Anaesthetists Association estimates that 1 in 8 women who have an epidural during labour need to use other methods of pain relief.</p>
+
+      <h3>How does an epidural work?</h3>
+      
+      <p>To have an epidural:
+        <ul>
+          <li>a drip will run fluid through a needle into a vein in your arm</li>
+          <li>while you lie on your side or sit up in a curled position, an anaesthetist will clean your back with antiseptic, numb a small area with some local</li> <li>anaesthetic, and then introduce a needle into your back</li>
+          <li>a very thin tube will be passed through the needle into your back near the nerves that carry pain impulses from the uterus. Drugs (usually a mixture of local anaesthetic and opioid) are administered through this tube. It takes about 10 minutes to set up the epidural, and another 10-15 minutes for it to work. It doesn't always work perfectly at first and may need adjusting</li>
+          <li>the epidural can be topped up by your midwife, or you may be able to top up the epidural yourself through a machine</li>
+          <li>your contractions and the baby's heart rate will need to be continuously monitored. This means having a belt around your abdomen and possibly a clip attached to the baby's head</li>
+        </ul>
+      </p>
+
+
+      <h3>Side effects of epidurals in labour</h3>
+
+      <p>There are some side effects to be aware of:
+        <ul>
+          <li>An epidural may make your legs feel heavy, depending on the local anaesthetic used.</li>
+
+          <li>Your blood pressure can drop (hypotension), but this is rare because the fluid given through the drip in your arm helps to maintain good blood pressure.</li>
+
+          <li>Epidurals can prolong the second stage of labour. If you can no longer feel your contractions, the midwife will have to tell you when to push. This means that forceps or a ventouse may be needed to help deliver the baby's head (instrumental delivery). When you have an epidural, your midwife or doctor will wait longer for the baby's head to come down (before you start pushing), as long as the baby is showing no signs of distress. This reduces the chance you'll need an instrumental delivery. Sometimes less anaesthetic is given towards the end, so the effect wears off and you can feel to push the baby out naturally.</li>
+
+          <li>You may find it difficult to pee as a result of the epidural. If so, a small tube called a catheter may be put into your bladder to help you.</li>
+
+          <li>About 1 in 100 women gets a headache after an epidural. If this happens, it can be treated.</li>
+
+          <li>Your back might be a bit sore for a day or two, but epidurals don't cause long-term backache.</li>
+
+          <li>About 1 in 2,000 women feels tingles or pins and needles down one leg after having a baby. This is more likely to be the result of childbirth itself rather than the epidural. You'll be advised by the doctor or midwife when you can get out of bed.</li>
+        </ul>
+      </p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare1"></a>
+        <ul>
+          <li><a href="#prepare1" title="">NHS - Epidurals</a></li>
+        </ul>
+      </div>
+
+
+       {{ pagination({
+        "previousUrl": "/labour-birth/the-birth/pain-relief-2",
+        "previousPage": "Gas and air (Entonox) for labour",
+        "nextUrl": "/labour-birth/the-birth/pain-relief-4",
+        "nextPage": "Self help, water and TENS"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

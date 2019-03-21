@@ -1,0 +1,63 @@
+{% set pageTitle = "Pain Relief" %}
+{% set parentPage = "The birth" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/labour-birth/the-birth/pain-relief",
+            text: "Your pain relief options",
+            current: "true"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-2",
+            text: "Gas and air (Entonox) for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-3",
+            text: "Injections and epidurals for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-4",
+            text: "Self help, water and TENS"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-5",
+            text: "Alternative methods of pain relief"
+          }
+        ]
+      }) }}
+
+      <h2>Your pain relief options</h2>
+      <p>Labour can be painful – it can help to learn about all the ways you can relieve the pain.</p>
+      <p>It's also helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you.</p> 
+      <p>Ask your midwife or doctor to explain what's available so you can decide what's best for you.</p>
+      <p>Write down your wishes in your birth plan, but remember you need to keep an open mind. You may find you want more pain relief than you'd planned, or your doctor or midwife may suggest more effective pain relief to help the delivery.</p>
+      
+      {{ pagination({
+        "nextUrl": "/labour-birth/the-birth/pain-relief-2",
+        "nextPage": "Gas and air (Entonox) for labour"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,161 @@
+{% set pageTitle = "Antenatal care" %}
+{% set parentPage = "I'm pregnant" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/im-pregnant/antenatal/antenatal-care",
+            text: "Antenatal care"
+          },
+          {
+            href: "/im-pregnant/antenatal/antenatal-care-2",
+            text: "Antenatal appointments",
+            current: "true"
+          },
+          {
+            href: "/im-pregnant/antenatal/antenatal-care-3",
+            text: "Preparing"
+          }
+        ]
+      }) }}
+
+
+      <h2>How many antenatal appointments will I have?</h2>
+      <p>If you're expecting your first child, you'll have up to <strong>10 antenatal appointments</strong>. If you've had a baby before, you'll have around <strong>7 appointments</strong> but, sometimes, you may have more – for example, if you develop a medical condition.</p>
+
+      <p>Early in your pregnancy, your midwife or doctor will give you written information about how many appointments you're likely to have and when they'll happen.</p>
+
+      <p>You should have a chance to discuss the schedule of antenatal appointments with them. If you can't keep an appointment, let the clinic or midwife know and make another one.</p>
+
+      <h2>Where will I have my antenatal appointments?</h2>
+      <p>Your appointments can take place at:
+      <ul>
+        <li>your home</li>
+        <li>a Children's Centre</li>
+        <li>a GP surgery</li>
+        <li>a hospital</li>
+      </ul>
+      
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="appoint1"></a>
+        <ul>
+          <li><a href="#appoint1" title="">Your antenatal appointments</a></li>
+        </ul>
+      </div>
+
+      <p>You will usually go to the hospital for your pregnancy scans.</p>
+
+      <p>Antenatal appointments should take place in a setting where you feel able to discuss sensitive issues, such as domestic violence, sexual abuse, mental illness or drugs.</p>
+
+      <p>To make sure you get the best pregnancy care, your midwife will ask you many questions about your and your family's health, and your preferences.</p>
+
+      <p>Your midwife will carry out some checks and tests, some of which will be done periodically throughout your pregnancy, such as urine tests and blood pressure checks. The results may affect your choices later in pregnancy, so it's important not to miss them.</p>
+
+      <p>Your midwife will also ask about any other social care support you may have or need, such as support from social workers or family liaison officers.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="appoint2"></a>
+        <ul>
+          <li><a href="#appoint2" title="">Domestic abuse in pregnancy</a></li>
+          <li><a href="#appoint2" title="">Mental health problems and pregnancy</a></li>
+          <li><a href="#appoint2" title="">Antenatal checks and tests</a></li>
+        </ul>
+      </div>
+
+      <h2>Questions you might be asked</h2>
+
+      <p>The midwife or doctor might ask about:
+      <ul>
+        <li>the date of the first day of your last period</li>
+        <li>your health</li>
+        <li>any previous illnesses and operations you've had</li>
+        <li>any previous pregnancies and miscarriages</li>
+        <li>the ethnic origins of you and your partner – to find out whether your baby may be at risk of certain inherited conditions – or other</li>
+        <li>relevant factors, such as whether your family has a history of twins</li>
+        <li>your job, your partner's job and what kind of accommodation you live in, to see whether your circumstances might affect your pregnancy</li>
+        <li>how you're feeling and whether you've been depressed</li>
+      </ul>
+      <p>Your antenatal appointments are an opportunity to tell your midwife or doctor if you're in a vulnerable situation or if you need extra support. This could be due to domestic abuse or violence, sexual abuse or female genital mutilation.</p>
+
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="appoint3"></a>
+        <ul>
+          <li><a href="#appoint3" title="">Miscarriage</a></li>
+          <li><a href="#appoint3" title="">Female genital mutilation (FGM)</a></li>
+          <li><a href="#appoint3" title="">Domestic abuse in pregnancy</a></li>
+        </ul>
+      </div>
+
+      <h2>Antenatal appointments after 24 weeks</h2>
+      <p>From around 24 weeks of your pregnancy, your antenatal appointments will usually become more frequent. However, if your pregnancy is uncomplicated and you're in good health, you may not be seen as often as someone who needs to be more closely monitored.</p>
+
+      <p>Later visits are usually quite short. Your midwife or doctor will: 
+      <ul>
+        <li>check your urine and blood pressure</li>
+        <li>feel your tummy (abdomen) to check the baby's position</li>
+        <li>measure your womb (uterus) to check your baby's growth</li>
+        <li>listen to your baby's heartbeat, if you want them to</li>
+      </ul>
+
+      <p>You can also ask questions or talk about anything that's worrying you. Talking about your feelings is as important as all the antenatal tests and examinations. You should be given information about:
+      <ul>
+        <li>making your birth plan</li>
+        <li>preparing for labour and birth</li>
+        <li>how to tell if you're in active labour</li>
+        <li>induction of labour if your baby is overdue (after your expected date of delivery)</li> 
+        <li>the "baby blues" and postnatal depression</li>
+        <li>feeding your baby</li>
+        <li>vitamin K (given to prevent vitamin K deficiency bleeding in your baby)</li>
+        <li>screening tests for newborn babies</li>
+        <li>looking after yourself and your new baby</li>
+      </ul>
+      
+      <p>Find out about your schedule of antenatal appointments and what to expect at each one.</p>
+
+      <p>At each antenatal appointment from <strong>24 weeks of pregnancy</strong>, your midwife or doctor will check your baby's growth. To do this, they'll measure the distance from the top of your womb to your pubic bone. The measurement will be recorded in your notes.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="appoint4"></a>
+        <ul>
+          <li><a href="#appoint4" title="">Week 24</a></li>
+          <li><a href="#appoint4" title="">How to make a birth plan</a></li>
+          <li><a href="#appoint4" title="">Inducing labour</a></li>
+          <li><a href="#appoint4" title="">Feeling depressed after childbirth</a></li>
+          <li><a href="#appoint4" title="">Your antenatal appointments</a></li>
+          <li><a href="#appoint4" title="">Keeping track of your baby's movements during pregnancy (Tommy's website)</a></li>
+        </ul>
+      </div>
+
+
+      {{ pagination({
+        "previousUrl": "/im-pregnant/antenatal/antenatal-care",
+        "previousPage": "Antenatal care",
+        "nextUrl": "/im-pregnant/antenatal/antenatal-care-3",
+        "nextPage": "Preparing"
+      }) }}
+    
+
+    </div>
+  </div>
+{% endblock %}

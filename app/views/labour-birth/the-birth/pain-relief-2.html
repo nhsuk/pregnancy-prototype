@@ -1,0 +1,76 @@
+
+{% set pageTitle = "Pain Relief" %}
+{% set parentPage = "The birth" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/labour-birth/the-birth/pain-relief",
+            text: "Your pain relief options"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-2",
+            text: "Gas and air (Entonox) for labour",
+            current: "true"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-3",
+            text: "Injections and epidurals for labour"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-4",
+            text: "Self help, water and TENS"
+          },
+          {
+            href: "/labour-birth/the-birth/pain-relief-5",
+            text: "Alternative methods of pain relief"
+          }
+        ]
+      }) }}
+
+
+      <h2>Gas and air (Entonox) for labour</h2>
+      <p>This is a mixture of oxygen and nitrous oxide gas. Gas and air won't remove all the pain, but it can help reduce it and make it more bearable. Many women like it because it's easy to use and they control it themselves.</p>
+
+      <p>You breathe in the gas and air through a mask or mouthpiece, which you hold yourself. The gas takes about 15-20 seconds to work, so you breathe it in just as a contraction begins. It works best if you take slow, deep breaths.</p>
+
+      <h3>Side effects</h3>
+      <ul>
+        <li>there are no harmful side effects for you or the baby</li>
+        <li>it can make you feel light-headed</li>
+        <li>some women find that it makes them feel sick, sleepy or unable to concentrate – if this happens, you can stop using it</li>
+        <li>If gas and air doesn't give you enough pain relief, you can ask for a painkilling injection as well.</li>
+      </ul>
+      
+
+      {{ pagination({
+        "previousUrl": "labour-birth/the-birth/pain-relief",
+        "previousPage": "Your pain relief options",
+        "nextUrl": "/labour-birth/the-birth/pain-relief-3",
+        "nextPage": "Injections and epidurals for labour"
+      }) }}
+    
+
+    </div>
+  </div>
+{% endblock %}

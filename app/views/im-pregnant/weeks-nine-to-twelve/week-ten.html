@@ -9,7 +9,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 {% extends 'layouts/layout-nhsuk.html' %}
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  {{ pageTitle }}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
@@ -24,9 +24,9 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
     <p>You'll be offered various screening and tests at this stage in your pregnancy and it's important that you make a note of when these tests are available.</p>
-    <hr class="nhsuk-hr">
   </div>
 </div>
+<hr class="nhsuk-hr">
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
     <section>

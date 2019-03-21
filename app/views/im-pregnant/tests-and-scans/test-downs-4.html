@@ -1,0 +1,80 @@
+{% set pageTitle = "Screening for Down's, Edwards' and Patau's syndromes" %}
+{% set parentPage = "Tests & Scans" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+ NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+   {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs",
+            text: "What are Down's, Edwards' and Patau's syndromes?"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-2",
+            text: "The screenings"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-3",
+            text: "Your results"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-4",
+            text: "What to do if the results are positive",
+            current: "true"
+          }
+        ]
+      }) }}
+
+      
+      <h2>If you find out your unborn baby has Down's, Edwards' or Patau's syndrome</h2>
+      <p>A small number of women who have a diagnostic test will find out their baby has Down's, Edwards' or Patau's syndrome. They then have two options.</p>
+
+      <p>Some women decide to continue with the pregnancy and prepare for their child with the condition, and others decide they do not want to continue with the pregnancy and have a termination (abortion).</p>
+
+      <p>If you are faced with this choice, you will get support from health professionals to help you make your decision. You can get more information from the charity Antenatal Results and Choices (ARC), which runs a helpline from Monday to Friday on 0845 077 2290 or 020 7137 7486 from a mobile.</p>
+
+      <p>The Down's Syndrome Association also has useful information on screening, and the UK National Screening Committee has produced a booklet called Screening tests for you and your baby.</p>
+
+      <p>The charity SOFT UK offers information and support through diagnosis, bereavement, pregnancy decisions and caring for all UK families affected by Edwards' syndrome (T18) or Patau's syndrome (T13).</p>
+
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare1"></a>
+        <ul>
+          <li><a href="#prepare1" title="">NHS - Abortion</a></li>
+          <li><a href="#prepare1" title="">Antenatal Results and Choices (ARC)</a></li>
+          <li><a href="#prepare1" title="">The Down's Syndrome Association</a></li>
+          <li><a href="#prepare1" title="">Screening tests for you and your baby (gov.uk)</a></li>
+          <li><a href="#prepare1" title="">SOFT UK</a></li>
+        </ul>
+      </div>
+      {% include "includes/videos/vid_downs_test.html" %}
+
+      
+
+      {{ pagination({
+        "previousUrl": "/im-pregnant/tests-and-scans/test-downs-3",
+        "previousPage": "Your results"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

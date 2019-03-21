@@ -10,7 +10,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 {% extends 'layouts/layout-nhsuk.html' %}
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  {{ pageTitle }}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 
 <!-- Breadcrumb goes inside this block -->

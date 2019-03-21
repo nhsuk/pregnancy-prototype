@@ -1,0 +1,83 @@
+{% set pageTitle = "Screening for Down's, Edwards' and Patau's syndromes" %}
+{% set parentPage = "Tests & Scans" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs",
+            text: "What are Down's, Edwards' and Patau's syndromes?",
+            current: "true"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-2",
+            text: "The screenings"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-3",
+            text: "Your results"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-4",
+            text: "What to do if the results are positive"
+          }
+        ]
+      }) }}
+
+      <p>All pregnant women in England are offered a screening test for Down's syndrome, Edwards' syndrome and Patau's syndrome between 10 and 14 weeks of pregnancy. This is to assess your chances of having a baby with these conditions.</p>
+      <p>Down's syndrome is also called trisomy 21 or T21. Edwards' syndrome is also called trisomy 18 or T18, and Patau's syndrome is also called trisomy 13 or T13.</p>
+      <p>If a screening test shows that you have a higher chance of having a baby with Down's, Edwards' or Patau's syndromes, you'll be offered diagnostic tests to find out for certain if your baby has the condition.</p>
+
+      <h2>What are Down's, Edwards' and Patau's syndromes?</h2>
+      <h3>Down's syndrome</h3>
+      <p>Down's syndrome causes some level of learning disability. It can vary from mild to severe.</p>
+      <p>Some health problems are more common in people with Down's syndrome, such as heart conditions, and problems with the digestive system, hearing and vision. Sometimes these can be serious, but many can be treated.</p>
+        <div class="nhsuk-navigation__contextual-links">
+          <h3>Relevant links</h3><a name="downs"></a>
+          <ul>
+            <li><a href="#downs" title="">NHS - Downs syndrome</a></li>
+            <li><a href="#downs" title="">The Down's Syndrome Association</a></li>
+          </ul>
+        </div>
+
+      <h3>Edwards' and Patau's syndromes</h3>
+      <p>Sadly, most babies with Edwards' or Patau's syndromes will die before or shortly after birth. Some babies may survive to adulthood, but this is rare.</p>
+
+      <p>All babies born with Edwards' or Patau's syndromes will have a wide range of problems, which are usually very serious. These may include major brain abnormalities.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="edwards"></a>
+        <ul>
+          <li><a href="#edwards" title="">NHS - Edwards' syndrome (trisomy 18)</a></li>
+          <li><a href="#edwards" title="">NHS - Patau's syndrome</a></li>
+          <li><a href="#edwards" title="">Antenatal Results & Choices ARC</a></li>
+        </ul>
+      </div>
+
+      {{ pagination({
+        "nextUrl": "/im-pregnant/tests-and-scans/test-downs-2",
+        "nextPage": "The screenings"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

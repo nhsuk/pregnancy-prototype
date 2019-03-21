@@ -1,0 +1,118 @@
+{% set pageTitle = "Screening for Down's, Edwards' and Patau's syndromes" %}
+{% set parentPage = "Tests & Scans" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+ NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+   {% include "includes/breadcrumb_impregnant_testscans_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs",
+            text: "What are Down's, Edwards' and Patau's syndromes?"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-2",
+            text: "The screenings"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-3",
+            text: "Your results",
+            current: "true"
+          },
+          {
+            href: "/im-pregnant/tests-and-scans/test-downs-4",
+            text: "What to do if the results are positive"
+          }
+        ]
+      }) }}
+
+      <h2>Getting your results</h2>
+      <p>The screening test will not tell you whether your baby does or doesn't have Down's, Edwards' or Patau's syndromes – it will tell you if you have a higher or lower chance (also called higher or lower risk) of having a baby with one of these conditions.</p>
+
+      <p>If you have screening for all of them, you will receive two results: one for your chance of having a baby with Down's syndrome, and one for your combined chance of having a baby with Edwards' or Patau's syndromes.</p>
+
+      <p>If your screening test returns a lower-chance result, you should be told within 2 weeks. If it shows a higher chance, you should be told within 3 working days of the result being available.</p>
+
+      <p>This may take a little longer if your test is sent to another hospital. It may be worth asking the midwife what happens in your area and when you can expect to get your results.</p>
+
+      <p>You will be offered an appointment to discuss the test results and the options you have.</p>
+
+      <p>The charity Antenatal Results and Choices (ARC) offers lots of information about screening results and your options if you get a higher-chance result.</p>
+
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare1"></a>
+        <ul>
+          <li><a href="#prepare1" title="">Antenatal Results and Choices (ARC)</a></li>
+        </ul>
+      </div>
+
+      <h2>Possible results</h2>
+      <h3>Lower-chance result</h3>
+      <p>If the screening test shows that the chance of having a baby with Down's, Edwards' and Patau's syndromes is lower than 1 in 150, this is a lower-chance result. More than 95 out of 100 screening test results will be lower chance.</p>
+
+      <p>A lower-chance result does not mean there's no chance at all of the baby having Down's, Edwards' or Patau's syndromes.</p>
+
+      <h3>Higher-chance result</h3>
+      <p>If the screening test shows that the chance of the baby having Down's, Edwards' or Patau's syndromes is higher than 1 in 150 – that is, anywhere between 1 in 2 and 1 in 150 – this is called a higher-chance result.</p>
+
+      <p>Fewer than 1 in 20 results will be higher chance. This means that out of 100 women accepting screening for Down's, Edwards' and Patau's syndromes, fewer than 5 will have a higher-chance result.</p>
+
+      <p>A higher-chance result does not mean the baby definitely has Down's, Edwards' or Patau's syndromes.</p>
+
+      <h2>Will I need further tests?</h2>
+      <p>If you have a lower-chance result, you will not be offered a further test. If you have a higher-chance result, you will be offered a diagnostic test, such as amniocentesis or chorionic villus sampling (CVS). This will tell you for certain whether or not the baby has Down's, Edwards' or Patau's syndrome.</p>
+
+      <p>About 0.5 to 1 in 100 diagnostic tests (0.5 to 1%) result in a miscarriage. It's up to you whether to have the further tests.</p>
+
+      <p>When trying to decide whether to have a diagnostic test, try to weigh up the risk of miscarriage with how important the result will be to you.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare1"></a>
+        <ul>
+          <li><a href="#prepare1" title="">NHS - Miscarriage</a></li>
+        </ul>
+      </div>
+
+      <h3>Chorionic villus sampling (CVS)</h3>
+      <p>This diagnostic test is usually done between weeks 11 and 14 of pregnancy. A fine needle, usually inserted through the mother's tummy (abdomen), is used to take a tiny sample of tissue from the placenta. The cells from the tissue are then tested for Down's, Edwards' or Patau's syndromes.</p>
+
+
+      <h3>Amniocentesis</h3>
+      <p>Amniocentesis is done from around week 15 of pregnancy. A fine needle is passed through the mother's tummy into the uterus to collect a small sample of the fluid surrounding the baby. The fluid contains cells from the baby, which are tested for Down's, Edwards' or Patau's 
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="prepare2"></a>
+        <ul>
+          <li><a href="#prepare2" title="">NHS - Chorionic villus sampling</a></li>
+          <li><a href="#prepare2" title="">NHS - Amniocentesis</a></li>
+        </ul>
+      </div>
+
+       {{ pagination({
+        "previousUrl": "/im-pregnant/tests-and-scans/test-downs-2",
+        "previousPage": "The screenings",
+        "nextUrl": "/im-pregnant/tests-and-scans/test-downs-4",
+        "nextPage": "What to do if the results are positive"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

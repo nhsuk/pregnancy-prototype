@@ -10,7 +10,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  NHS.UK prototype kit
+  NHS.UK - {{ pageTitle }}
 {% endblock %}
 
 <!-- Breadcrumb goes inside this block -->
@@ -26,6 +26,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <p>You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
     </div>
   </div>
+  <hr class="nhsuk-hr">
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
       <hr class="nhsuk-hr"> 
@@ -77,7 +78,6 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <div class="nhsuk-grid-row nhsuk-promo-group">
         {% include "includes/promos/promo_antenatalcare.html" %}
         {% include "includes/promos/promo_testsandscans.html" %} 
-        {% include "includes/promos/promo_pain.html" %}
       </div>
        <div class="nhsuk-grid-row nhsuk-promo-group">
         {% include "includes/promos/promo_preparing.html" %}  
@@ -91,12 +91,12 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
       <div class="block-links_list_group">
-        <h2>Popular pages</h2>
+        <h2>Popular pages</h2><a name="links"></a>
           <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
               <ul class="nhsuk-list nhsuk-list-links">
                 <li>{% include "includes/links/birth_plan.html" %}</li>
                 <li>{% include "includes/links/signs_pregnancy.html" %}</li>
-                <li>{% include "includes/links/routine_checks.html" %}</li>
+                <li>{% include "includes/links/antenatal_checks.html" %}</li>
                 <li>{% include "includes/links/twelve_week_scan.html" %}</li>    
               </ul>
           </div>
@@ -104,8 +104,8 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
             <ul class="nhsuk-list nhsuk-list-links">
               <li>{% include "includes/links/pregnancy_to_do.html" %}</li>
               <li>{% include "includes/links/pain_relief.html" %}</li>
-              <li>{% include "includes/links/foods_to_avoid.html" %}</li>
-              <li><a href="">Health things you should know</a></li>
+              <li>{% include "includes/links/signs_labour.html" %}</li>
+              <li><a href="#links">Foods to avoid</li>
             </ul>
           </div>
         </div>

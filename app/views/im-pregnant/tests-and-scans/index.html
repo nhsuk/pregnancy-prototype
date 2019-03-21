@@ -10,7 +10,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
-  NHS - Pregnancy - {{ parentPage }} - {{ pageTitle }}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 
 <!-- Breadcrumb goes inside this block -->
@@ -22,41 +22,56 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h1>{{ pageTitle }}
-      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
-    </h1>
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+      </h1>
       <p>During your pregnancy, you'll be offered a range of tests, including blood tests and ultrasound baby scans. These are to monitor you and your baby.</p>
-      <p>All pregnant women in England are offered an ultrasound scan at around <strong>8 to 14 weeks</strong> of pregnancy. This is called the dating scan.</p>
-      <p>All pregnant women in England are offered a screening test for Down's syndrome, Edwards' syndrome and Patau's syndrome between <strong>10 and 14 weeks</strong> of pregnancy. </p>
-      <p>A detailed ultrasound scan, sometimes called the mid-pregnancy scan, is usually carried out when you're between <strong>18 and 21 weeks</strong> pregnant.</p>
-      <div>
+      <p>All pregnant women in England are offered an ultrasound scan at around <strong>8 to 14 weeks</strong> of pregnancy. This is called the <strong>12 week dating scan</strong>.</p>
+      <p>All pregnant women in England are offered a screening test for <strong>Down's syndrome, Edwards' syndrome and Patau's syndrome</strong> between <strong>10 and 14 weeks</strong> of pregnancy. It's called the combined test because it combines an ultrasound scan with a blood test. If you're more than 14 weeks into your pregnancy, you'll be offered a test called the <strong>quadruple blood screening test</strong> between <strong>14 and 20 weeks</strong> of pregnancy.</p>
+      <p>A detailed ultrasound scan, sometimes called the <strong>mid-pregnancy scan</strong>, is usually carried out when you're between <strong>18 and 21 weeks</strong> pregnant.</p>
     </div>
   </div>
-
+<hr class="nhsuk-hr">
   
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
       <div class="block-links_list_group">
-        <h2>All pages about {{ pageTitle }}</h2>
+        <h2>All pages about {{ pageTitle }}</h2><a name="links"></a>
           <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
             <h3>Scans</h3>
               <ul class="nhsuk-list nhsuk-list-links">
                 <li>{% include "includes/links/twelve_week_scan.html" %}</li>           
                 <li>{% include "includes/links/test_downs.html" %}</li>
-                <li><a href="#">Anomolies/mid-pregnancy scan</q></li>
-                <li><a href="#">Pregnancy ultrasound scans</a></li>    
+                <li><a href="#links">The mid-pregnancy scan</q></li>
+                <li><a href="#links">General pregnancy ultrasound scans</a></li>    
               </ul>
           </div>
-          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
             <h3>Tests</h3>
             <ul class="nhsuk-list nhsuk-list-links">
-              <li>Antenatal checks and tests</li> 
-              <li><a href="#">If antenatal screening tests find something</a></li>
-              <li><a href="#">Amniocentesis tests</a></li>
-              <li><a href="#">Chorionic villus sampling</a></li>
+              <li><a href="#links">Routine checks and tests</a></li> 
+              <li><a href="#links">If antenatal screening tests find something</a></li>
+              <li><a href="#nhsuk-list-links">Amniocentesis tests</a></li>
+              <li><a href="#links">Chorionic villus sampling</a></li>
             </ul>
           </div>
         </div>
+
     </div>
-  </div>      
+  </div> 
+<hr class="nhsuk-hr">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h2>Relevant topics</h2><a name="topic"></a>
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        {% include "includes/promos/promo_antenatalcare.html" %}
+        {% include "includes/promos/promo_preginduced.html" %} 
+        {% include "includes/promos/promo_food.html" %} 
+      </div>
+       <div class="nhsuk-grid-row nhsuk-promo-group">
+        
+      </div>
+      <hr class="nhsuk-hr">
+    </div>
+  </div>     
 
 {% endblock %}
