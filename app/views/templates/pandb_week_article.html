@@ -1,4 +1,4 @@
-{% set pageTitle = "Week 10" %}
+{% set pageTitle = "Week X" %}
 {% set parentPage = "I'm pregnant" %}
 {% extends 'layouts/layout-nhsuk.html' %}
 
@@ -6,9 +6,8 @@
   NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 
-<!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  {% include "includes/breadcrumbsbreadcrumb_levelfive.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -18,105 +17,62 @@
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>Standfirst text</p><hr class="nhsuk-hr">
+    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
   </div>
 </div>
+<hr class="nhsuk-hr">
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
-    <nav>
-      <ul class="nhsuk-week__pagination">
-        <li data-item-id="pregnancy_week" data-id="week _nine" >
-            <a href="" class="nhsuk-promo__link-wrapper">
-                <hgroup><h3>Week</h3><h4>9</h4></hgroup>
-            </a>
-        </li>
-        <li data-item-id="pregnancy_week" data-id="week _ten">
-            <div class="nhsuk-promo__link-wrapper current">
-                <hgroup><h3>Week</h3><h4>10</h4></hgroup>
-            </div>
-        </li>
-        <li data-item-id="pregnancy_week" data-id="week _eleven" >
-            <a href="" class="nhsuk-promo__link-wrapper">
-              <div class="">
-                <hgroup><h3>Week</h3><h4>11</h4></hgroup>
-              </div>
-            </a>
-        </li>
-        <li data-item-id="pregnancy_week" data-id="week _twelve" >
-            <a href="" class="nhsuk-promo__link-wrapper">
-                <hgroup><h3>Week</h3><h4>12</h4></hgroup>
-            </a>
-        </li>
-        <li data-item-id="pregnancy_week" data-id="week _thirteen" >
-            <a href="" class="nhsuk-promo__link-wrapper">
-                <hgroup><h3>Week</h3><h4>13</h4></hgroup>
-            </a>
-        </li>
-      </ul>
-    </nav>
+    {% include "includes/paginations/week_ten.html" %}  
     <hr class="nhsuk-hr">
 
-
-    <h2>Things to think about</h2>
-    <p>Praeterea iter est quasdam res quas ex communi. Mercedem aut nummos unde unde extricat, amaras.</p>
-    <ul>
-      <li>Contra legem facit qui id facit quod lex prohibet.</li>
-      <li>Quid securi etiam tamquam eu fugiat nulla pariatur.</li>
-      <li>Ambitioni dedisse scripsisse iudicaretur. Tityre, tu patulae recubans sub tegmine fagi dolor.</li>
-      <li>Magna pars studiorum, prodita quaerimus. Phasellus laoreet lorem vel dolor tempus vehicula.</li>
-    </ul>
-    <div class="nhsuk-navigation__contextual-links">
-      <h3>Links title</h3>
+    <section>
+      <h2>Things to think about</h2>
+      <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-    </div>
-    <hr class="nhsuk-hr">
-    <h2>You at {{ pageTitle }}</h2>
-    <p>Fictum, deserunt mollit anim laborum astutumque! Gallia est omnis divisa in partes tres, quarum. Curabitur blandit tempus ardua ridiculus sed magna. At nos hinc posthac, sitientis piros Afros.</p>
-    <div class="nhsuk-navigation__contextual-links">
-      <h3>Links title</h3>
-      <ul>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-      </ul>
-    </div>
-    <hr class="nhsuk-hr">
-    <h2>Your baby at {{ pageTitle }}</h2>
-    <p>Quae vero auctorem tractata ab fiducia dicuntur. Quis aute iure reprehenderit in voluptate velit esse. Paullum deliquit, ponderibus modulisque suis ratio utitur. Excepteur sint obcaecat cupiditat non proident culpa. Inmensae subtilitatis, obscuris et malesuada fames.</p>
-    <div class="nhsuk-navigation__contextual-links">
-      <h3>Links title</h3>
-      <ul>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-        <li><a href="" title="">Link</a></li>
-      </ul>
-    </div>
-    <hr class="nhsuk-hr">
-    [optional video]
-    <hr class="nhsuk-hr">
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li>{% include "includes/links/test_downs.html" %}</li>
+          <li><a href="#think" title="">Where to give birth: the options</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>You at {{ pageTitle }}</h2>
+      <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="you"></a>
+        <ul>
+          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title=""></a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>Your baby at {{ pageTitle }}</h2>
+      <p>Ab illo tempore, ab est sed immemorabili. Tityre, tu patulae recubans sub tegmine fagi dolor. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/videos/vid_domestic_abuse.html" %}
     <h2>Useful links</h2>
     <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
         <ul class="nhsuk-list nhsuk-list-links">
-          <li><a href="">Paullum deliquit, ponderibus .</a></li>
-          <li><a href="">Petierunt uti sibi concilium totius .</a></li>
-          <li><a href="">Galliae in diem certam indicere</a></li>
-          <li><a href="">Modulisque suis ratio utitur</a></li>    
+          <li><a href="https://www.nhs.uk/start4life/signups/new">Start4Life's weekly emails</a></li>
+          <li><a href="https://www.downs-syndrome.org.uk/about/">Down's Syndrome Association</a></li>
+          <li><a href="http://refuge.org.uk">Refuge</a></li> 
+          <li><a href="http://www.nationaldomesticviolencehelpline.org.uk">National Domestic Helpline</a></li>    
         </ul>
     </div>
-
-
   </div>
 </div> 
-
 {% endblock %}
