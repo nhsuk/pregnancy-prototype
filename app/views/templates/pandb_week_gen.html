@@ -1,19 +1,13 @@
-<!-- 
-ADDING CUSTOM CSS
-Add your custom CSS/Sass to /app/assets/sass/main.scss
--->
 {% set pageTitle = "Page Title" %}
 {% set parentPage = "Parent 1 up" %}
-<!-- Extends the layout from /app/views/layouts/layout.html -->
-<!--{% extends 'layouts/layout.html' %}-->
 {% extends 'layouts/layout-nhsuk.html' %}
-<!-- Set the page title inside this block -->
+
 {% block pageTitle %}
   NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  {% include "includes/breadcrumb_levelfive.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -27,10 +21,6 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
     <hr class="nhsuk-hr">
   </div>
 </div>
-
-
-
-
 
 
 {% endblock %}

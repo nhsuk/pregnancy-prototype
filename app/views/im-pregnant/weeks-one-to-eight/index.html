@@ -1,7 +1,6 @@
-{% set pageTitle = "I'm pregnant" %}
-{% set parentPage = "Pregnancy" %}
+{% set pageTitle = "Weeks 1 to 8" %}
+{% set parentPage = "I'm pregnant" %}
 {% extends 'layouts/layout-nhsuk.html' %}
-
 
 <!-- Set the page title inside this block -->
 {% block pageTitle %}
@@ -10,7 +9,7 @@
 
 <!-- Breadcrumb goes inside this block -->
 {% block beforeContent %}
-  {% include "includes/breadcrumbs/breadcrumb_levelfour.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -20,15 +19,15 @@
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>Everything you need to know about being pregnant is here. You'll find detailed week-by-week guides and lots of information about each stage of your pregnancy.</p>
+    <p>Your weeks of pregnancy are dated from the first day of your last period. This means that in the first 2 weeks or so, you aren't actually pregnant – your body is preparing for ovulation (releasing an egg from one of your ovaries) as usual.</p>
+    <div> 
   </div>
 </div>
 <hr class="nhsuk-hr">
-
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <h2>Your pregnancy week by week</h2>
-    {% include "includes/carousels/carousel.html" %}
+    {% include "includes/carousels/carousel_week_zero_to_eight.html" %}
   </div> 
 </div> 
 <hr class="nhsuk-hr">
@@ -39,17 +38,20 @@
   </div>
 </div>
 <hr class="nhsuk-hr">
+
 <div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">  
-    {% include "includes/link_clusters/pregnancy_general.html" %}
+  <div class="nhsuk-grid-column-full"> 
+    {% include "includes/link_clusters/early_days.html" %}
   </div>
 </div> 
 <hr class="nhsuk-hr">
+
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    {% include "includes/promo_clusters/pregnancy_general.html" %}
+    {% include "includes/promo_clusters/early_days.html" %}
+    <hr class="nhsuk-hr">
   </div>
 </div>
-<hr class="nhsuk-hr">
+
 
 {% endblock %}

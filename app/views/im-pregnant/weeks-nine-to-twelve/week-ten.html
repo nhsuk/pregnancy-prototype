@@ -1,19 +1,13 @@
-<!-- 
-ADDING CUSTOM CSS
-Add your custom CSS/Sass to /app/assets/sass/main.scss
--->
 {% set pageTitle = "Week 10" %}
 {% set parentPage = "I'm pregnant" %}
-<!-- Extends the layout from /app/views/layouts/layout.html -->
-<!--{% extends 'layouts/layout.html' %}-->
 {% extends 'layouts/layout-nhsuk.html' %}
-<!-- Set the page title inside this block -->
+
 {% block pageTitle %}
   NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
-<!-- Breadcrumb goes inside this block -->
+
 {% block beforeContent %}
-  {% include "includes/breadcrumb_levelfive.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -27,42 +21,12 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   </div>
 </div>
 <hr class="nhsuk-hr">
+
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
-    <section>
-      <nav>
-        <ul class="nhsuk-week__pagination">
-          <li data-item-id="pregnancy_week" data-id="week _nine">
-              <a href="" class="nhsuk-promo__link-wrapper">
-                  <hgroup><h3>Week</h3><h4>9</h4></hgroup>
-              </a>
-          </li>
-          <li data-item-id="pregnancy_week" data-id="week _ten">
-              <div class="nhsuk-promo__link-wrapper current">
-                  <hgroup><h3>Week</h3><h4>10</h4></hgroup>
-              </div>
-          </li>
-          <li data-item-id="pregnancy_week" data-id="week _eleven">
-              <a href="" class="nhsuk-promo__link-wrapper">
-                <div class="">
-                  <hgroup><h3>Week</h3><h4>11</h4></hgroup>
-                </div>
-              </a>
-          </li>
-          <li data-item-id="pregnancy_week" data-id="week _twelve">
-              <a href="" class="nhsuk-promo__link-wrapper">
-                  <hgroup><h3>Week</h3><h4>12</h4></hgroup>
-              </a>
-          </li>
-          <li data-item-id="pregnancy_week" data-id="week _thirteen">
-              <a href="" class="nhsuk-promo__link-wrapper">
-                  <hgroup><h3>Week</h3><h4>13</h4></hgroup>
-              </a>
-          </li>
-        </ul>
-      </nav>
-      <hr class="nhsuk-hr">
-    </section>
+    {% include "includes/paginations/week_ten.html" %}  
+    <hr class="nhsuk-hr">
+
     <section>
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>

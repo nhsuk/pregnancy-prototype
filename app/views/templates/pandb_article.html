@@ -1,21 +1,15 @@
-<!-- 
-ADDING CUSTOM CSS
-Add your custom CSS/Sass to /app/assets/sass/main.scss
--->
-{% set pageTitle = "I'm pregnant" %}
-{% set parentPage = "Pregnancy" %}
 
-<!-- Extends the layout from /app/views/layouts/layout.html -->
-<!--{% extends 'layouts/layout.html' %}-->
+{% set pageTitle = "page title" %}
+{% set parentPage = "page parent" %}
 {% extends 'layouts/layout-nhsuk.html' %}
-<!-- Set the page title inside this block -->
+
 {% block pageTitle %}
   NHS.UK - {{ parentPage }} - {{ pageTitle }}
 {% endblock %}
 
-<!-- Breadcrumb goes inside this block -->
+
 {% block beforeContent %}
-  {% include "includes/breadcrumb_levelfour.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfour.html" %}
 {% endblock %}
 
 {% block content %}
