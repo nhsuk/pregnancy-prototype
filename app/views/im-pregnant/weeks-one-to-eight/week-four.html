@@ -1,0 +1,91 @@
+{% set pageTitle = "Week 4" %}
+{% set parentPage = "I'm pregnant" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>
+      {{ pageTitle }}
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
+  </div>
+</div>
+<hr class="nhsuk-hr">
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    {% include "includes/paginations/week_four.html" %}  
+    <hr class="nhsuk-hr">
+    <section>
+      <h2>Things to think about</h2>
+      <ul>
+        <li>what to expect on your NHS pregnancy journey</li>
+        <li>there's help and support if you're a teenager</li>
+        <li>avoid drinking alcohol when you're pregnant or trying to get pregnant – find out about units of alcohol and tips on avoiding alcohol in pregnancy</li>
+        <li>how physical and emotional changes in pregnancy can affect your relationships</li>
+      </ul>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li><a href="#think" title="">Your NHS pregnancy journey</a></li>
+          <li><a href="#think" title="">Teenage pregnancy support</a></li>
+          <li><a href="#think" title="">Drinking alcohol while pregnant</a></li>
+          <li><a href="#think" title="">Feelings, relationships and pregnancy</a></li>    
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>You at {{ pageTitle }}</h2>
+      <p>Conception usually takes place about 2 weeks after your last period, around the time you release an egg (ovulate).</p>
+      <p>In the first 4 weeks of pregnancy, you probably won't notice any symptoms.</p>
+      <p>The first thing most women notice is that their period doesn't arrive, or they may have other signs and symptoms of pregnancy, such as breast tenderness.</p>
+      <p>Most women confirm the pregnancy with a pregnancy test.</p>
+      <p>You can work out the date when your baby is due. This date may be changed when you have an ultrasound scan.</p>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="you"></a>
+        <ul>
+          <li>{% include "includes/links/signs_pregnancy.html" %}</li>
+          <li><a href="#you" title="">Doing a pregnancy test</a></li>
+          <li><a href="#you" title="">Pregnancy due date calculator</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>Your baby at {{ pageTitle }}</h2>
+      <p>In weeks 4 to 5 of early pregnancy, the embryo grows and develops within the lining of the womb. 
+      <p>The outer cells reach out to form links with the mother's blood supply. The inner cells form into 2, and then later into 3, layers.</p>
+      <p>Each of these layers will grow to be different parts of the baby's body:
+        <ul>
+          <li>the inner layer becomes the breathing and digestive systems, including the lungs, stomach, gut and bladder</li>
+          <li>the middle layer becomes the heart, blood vessels, muscles and bones</li>
+          <li>the outer layer becomes the brain and nervous system, the eye lenses, tooth enamel, skin and nails</li>
+          <li>In these early weeks of pregnancy, the embryo is attached to a tiny yolk sac that provides nourishment.</li>
+        </ul>
+      </p>
+      <p>A few weeks later, the placenta will be fully formed and take over the transfer of nutrients to the embryo.</p>
+      <p>The embryo is surrounded by fluid inside the amniotic sac. It's the outer layer of this sac that develops into the placenta.</p>
+      <p>Cells from the placenta grow deep into the wall of the womb, establishing a rich blood supply. This ensures the baby receives all the oxygen and nutrients it needs.</p>
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/videos/vid_supplements.html" %}
+    <section>
+      {% include "includes/link_clusters/one-eight_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/paginations/week_four.html" %}  
+    <hr class="nhsuk-hr">
+  </div>
+</div> 
+{% endblock %}

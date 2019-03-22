@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {% include "includes/breadcrumbs/breadcrumb_levelfive.html" %}
+  {% include "includes/breadcrumbs/breadcrumb_impregnant_levelfive.html" %}
 {% endblock %}
 
 {% block content %}
@@ -66,15 +66,7 @@
       <hr class="nhsuk-hr">
     </section>
     {% include "includes/videos/vid_domestic_abuse.html" %}
-    <h2>Useful links</h2>
-    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
-        <ul class="nhsuk-list nhsuk-list-links">
-          <li><a href="https://www.nhs.uk/start4life/signups/new">Start4Life's weekly emails</a></li>
-          <li><a href="https://www.downs-syndrome.org.uk/about/">Down's Syndrome Association</a></li>
-          <li><a href="http://refuge.org.uk">Refuge</a></li> 
-          <li><a href="http://www.nationaldomesticviolencehelpline.org.uk">National Domestic Helpline</a></li>    
-        </ul>
-    </div>
+    {% include "includes/link_clusters/early_days_external.html" %}
   </div>
 </div> 
 {% endblock %}

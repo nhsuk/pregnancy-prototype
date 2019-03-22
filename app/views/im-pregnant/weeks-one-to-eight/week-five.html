@@ -1,0 +1,102 @@
+{% set pageTitle = "Week 5" %}
+{% set parentPage = "I'm pregnant" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>
+      {{ pageTitle }}
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
+  </div>
+</div>
+<hr class="nhsuk-hr">
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    {% include "includes/paginations/week_five.html" %}  
+    <hr class="nhsuk-hr">
+    <section>
+      <h2>Things to think about</h2>
+      <p>These are the things that you should consider and need to think about now.</p>
+      <ul>
+        <li>You're advised to take 400 micrograms (400mcg) of folic acid a day while you're trying to get pregnant and until the 12th week of pregnancy.</li>
+        <li>Not smoking is one of the best things you can do for your baby's health. Sign up for 28 days of free quitting advice and tips to your inbox on the Smokefree site.</li>
+        <li>Avoid some foods in pregnancy to protect against infections.</li>
+        <li>You can save a to-do list to keep track of things to do, such as taking folic acid and getting free dental care.</li>
+        <li>Talk to your midwife, doctor or pharmacist before taking any medicines you buy from a pharmacy when you're pregnant, or any herbal or homeopathic remedies.</li>
+        <li></li>
+      </ul>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li><a href="#think" title="">Vitamins, supplements and nutrition in pregnancy</a></li>
+          <li><a href="#think" title="">Stop smoking in pregnancy</a></li>
+          <li>{% include "includes/links/pregnancy_to_do.html" %}</li>
+          <li><a href="#think" title="">Foods to avoid in pregnancy</a></li>
+          <li><a href="#think" title="">Medicines in pregnancy</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>You at {{ pageTitle }}</h2>
+      <p>This is the time of the first missed period, when most women are only just beginning to think they may be pregnant.</p>
+      <p>Find out what to expect on your NHS pregnancy journey.</p>
+      <p>Antenatal care (also called pregnancy or maternity care) is the care you get from midwives and doctors during your pregnancy to make sure you and your baby are as well as possible.</p>
+      <p>Contact your GP or your preferred maternity service promptly once you know you're pregnant so you start getting care at the right time. They'll arrange your first midwife appointment.</p>
+      <p>Starting your maternity care early in pregnancy is important if you have a health condition that may affect your pregnancy, such as heart or lung conditions, epilepsy, mental health problems, diabetes or asthma.</p>
+      <p>Your doctor or midwife will be able to advise you if you're taking medicines for your condition while you're pregnant, and provide the specialist care you and your baby need.</p>
+      <p>Do not stop taking any prescribed medicine without checking with your doctor or midwife first.</p>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="you"></a>
+        <ul>
+          <li><a href="#you" title="">Find maternity services near you</a></li>
+          <li><a href="#you" title="">Your first midwife appointment</a></li>
+          <li><a href="#you" title="">Epilepsy and pregnancy</a></li>
+          <li><a href="#you" title=""></a>Mental health problems and pregnancy</li>
+          <li><a href="#you" title="">Diabetes and pregnancy</a></li>
+          <li><a href="#you" title="">Asthma and pregnancy</a></li>
+          <li><a href="#you" title="">Medicines in pregnancy</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+    </section>
+    <section>
+      <h2>Your baby at {{ pageTitle }}</h2>
+      <p>The baby's nervous system is already developing, and the foundations for its major organs are in place. At this stage, the embryo is around 2mm long.</p>
+      <p>The heart is forming as a simple tube-like structure. The baby already has some of its own blood vessels and blood begins to circulate.</p>
+      <p>A string of these blood vessels connects the baby and mother, and will become the umbilical cord.</p>
+      <p>At the same time, the embryo's outer layer of cells develops a groove and folds to form a hollow tube called the neural tube. This will become the baby's brain and spinal cord.</p>
+      <p>Defects in one end (the "tail end") of the neural tube lead to spina bifida. Defects in the "head end" lead to anencephaly, when the bones of the skull don't form properly.</p>
+      <p>Folic acid prevents spina bifida. You should start taking it as soon as you find out you're pregnant (even before you get pregnant, if possible).</p>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="you"></a>
+        <ul>
+          <li><a href="#you" title="">Vitamins, supplements and nutrition in pregnancy</a></li>
+          <li><a href="#you" title="">NHS - Spina Bifida</a></li>
+        </ul>
+      </div>
+      <hr class="nhsuk-hr">
+      <hr class="nhsuk-hr">
+    </section>
+      {% include "includes/videos/vid_supplements.html" %}
+    <section>
+      {% include "includes/link_clusters/one-eight_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
+      {% include "includes/paginations/week_five.html" %}  
+    <hr class="nhsuk-hr">
+  </div>
+</div> 
+{% endblock %}
