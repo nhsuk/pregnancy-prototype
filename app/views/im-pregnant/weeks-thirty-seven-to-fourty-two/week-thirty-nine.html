@@ -17,7 +17,7 @@
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
+    <p>There are several signs that labour might be starting. These may be different for different women – find out what labour signs to look out for and when to call your midwife.</p>
   </div>
 </div>
 <hr class="nhsuk-hr">
@@ -35,40 +35,49 @@
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Your hospital bag: check you've got everything</li>
+        <li>What happens straight after the birth</li>
       </ul>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="think">
         <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
-          <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="#think" title="">Where to give birth: the options</a></li>
+          <li>{% include "includes/links/pack_your_bag.html" %}</li>
+          <li><a href="#think" title="">What happens straight after the birth?</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
-      <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <p>Pre-eclampsia is a serious pregnancy related condition. Not everyone with pre-eclampsia has symptoms, but the urine and blood pressure tests at your antenatal visits check for it. Symptoms can include severe headaches, vision problems, such as blurring or seeing flashing lights, pain just below the ribs, and sudden increase in swelling of the hands, face or feet.</p>
+      <p>There are several signs that labour might be starting. These may be different for different women – find out what labour signs to look out for and when to call your midwife.</p>
+      <p>What happens during labour and birth.</p>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="you"></a>
         <ul>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title="">NHS - Pre-eclampsia</a></li>
+          <li>{% include "includes/links/signs_labour.html" %}</li>
+          <li><a href="#you" title="">What happens during labour and birth</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>Your baby at {{ pageTitle }}</h2>
-      <p>Ab illo tempore, ab est sed immemorabili. Tityre, tu patulae recubans sub tegmine fagi dolor. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+      <p>In the last weeks, some time before birth, the baby's head should move down into your pelvis. When your baby's head moves down like this, it's said to be "engaged".</p>
+      <p>When this happens, you may notice your bump seems to move down a little. Sometimes the head doesn't engage until labour starts.</p>
       <hr class="nhsuk-hr">
     </section>
-    {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    {% include "includes/videos/vid_first_things.html" %}
+    <section>
+      {% include "includes/link_clusters/early_days_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
   </div>
 </div> 
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    {% include "includes/paginations/week_thirty_nine.html" %}  
+  </div>
+</div>
 {% endblock %}

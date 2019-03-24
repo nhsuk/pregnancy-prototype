@@ -35,40 +35,59 @@
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>The signs that labour might be starting</li>
+        <li>Your pain relief options in labour, including things you can do yourself</li>
+        <li>when to contact your antenatal team during labour, when to go to the maternity unit and what to expect</li>
+        <li>what your birth partner can do to support you during labour and birth</li>
+        <li>a breech birth, when a baby is born bottom first, which is more complicated than a head-first birth</li>  
+        <li>a caesarean birth, when you have surgery to deliver your baby</li>
+        <li>the newborn blood spot (heel prick) test that'll be offered to your baby</li>
       </ul>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="think">
         <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
-          <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="#think" title="">Where to give birth: the options</a></li>
+          <li>{% include "includes/links/signs_labour.html" %}</li>
+          <li>{% include "includes/links/pain_relief.html" %}</li>
+          <li><a href="#think" title="">At the hospital or birth centre</a></li>
+          <li>{% include "includes/links/tips_for_partners.html" %}</li>
+          <li><a href="#think" title="">What happens if your baby is breech?</a></li>
+          <li><a href="#think" title="">NHS - Caesarean section</a></li>
+          <li><a href="#think" title="">Newborn blood spot test</a></li>
+          
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
-      <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <p>When you're around 37 weeks pregnant, if it's your first pregnancy, your baby moves down ready to be born. You may feel more comfortable when this happens, and you'll probably also feel increased pressure in your lower abdomen.</p>
+      <p>If it's not your first pregnancy, the baby may not move down until labour.</p>
+      <p>You may notice your breasts leaking some fluid, and this is normal.</p>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="you"></a>
         <ul>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title="">Leaking from your nipples</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>Your baby at {{ pageTitle }}</h2>
-      <p>Ab illo tempore, ab est sed immemorabili. Tityre, tu patulae recubans sub tegmine fagi dolor. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+      <p>At 37 weeks, your pregnancy is considered full-term. The average baby weighs around 3-4kg by now. Your baby is ready to be born, and you'll be meeting them some time in the next few weeks.</p>
+      <p>Your baby's gut (digestive system) now contains meconium – the sticky green substance that will form your baby's first poo after birth. It may include bits of the lanugo (fine hair) that covered your baby earlier in pregnancy.</p>
       <hr class="nhsuk-hr">
     </section>
-    {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    {% include "includes/videos/vid_positions.html" %}
+    <section>
+      {% include "includes/link_clusters/last_trimester_external.html" %}
+    </section>
+    <hr class="nhsuk-hr">
+
+  </div>
+</div> 
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    {% include "includes/paginations/week_thirty_seven.html" %} 
   </div>
 </div> 
 {% endblock %}
