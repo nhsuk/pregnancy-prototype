@@ -1,4 +1,4 @@
-{% set pageTitle = "Your antenatal care" %}
+{% set pageTitle = "Your pregnancy journey" %}
 {% set parentPage = "I'm pregnant" %}
 {% extends 'layouts/layout-nhsuk.html' %}
 
@@ -64,60 +64,16 @@
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <h2>Relevant topics</h2><a name="topic"></a>
-    {% include "includes/promos/promo_preparing.html" %}
-    
-
-      <!--
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Complications during birth</h3>
-              <p class="nhsuk-promo__description">From breech birth, caesarean section and forcep deliveries.</p>
-            </div>
-          </a>
-        </div>
-      </div>-->
-        
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      {% include "includes/promos/promo_benefits.html" %}
+      {% include "includes/promos/promo_existinghealth.html" %}
+      {% include "includes/promos/promo_preginduced.html" %}
     </div>
 
-    <div class="nhsuk-grid-row nhsuk-promo-group">
-      
-    <!--  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">New parents</h3>
-              <p class="nhsuk-promo__description">Everything from getting breastfeeding started, to washing and bathing your baby and changing their nappy</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Twins</h3>
-              <p class="nhsuk-promo__description">Find out all you need to know about twins and multiple births.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Newborns</h3>
-              <p class="nhsuk-promo__description">Get to know your newborn and find out what to expect in the first few days.</p>
-            </div>
-          </a>
-        </div>
-      </div>-->
-      
-      
-      
+    <div class="nhsuk-grid-row nhsuk-promo-group">    
+      {% include "includes/promos/promo_illness.html" %}
+      {% include "includes/promos/promo_lifestylewellbeing.html" %}
+      {% include "includes/promos/promo_medicines.html" %}
     </div>
     <hr class="nhsuk-hr">
   </div>
