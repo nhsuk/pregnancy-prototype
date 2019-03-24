@@ -1,0 +1,87 @@
+{% set pageTitle = "Signs that labour has begun" %}
+{% set parentPage = "The start of labour" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+{% include "includes/breadcrumbs/breadcrumb_impregnant_levelfive.html" %}
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+		<h1>
+			{{ pageTitle }}
+			<span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+		</h1>
+
+		{{ contentsList({
+        items: [
+          {
+            href: "/labour-birth/the-start-of-labour/signs-that-labour-has-begun",
+            text: "Signs of labour",
+            current: "true"
+          },
+          {
+            href: "/labour-birth/the-start-of-labour/signs-that-labour-has-begun-2",
+            text: "Symptoms of labour"
+          },
+          {
+            href: "/labour-birth/the-start-of-labour/signs-that-labour-has-begun-3",
+            text: "How to cope when labour begins"
+          }
+        ]
+      }) }}
+
+
+		<p>The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, day.</p>
+		<hr class="nhsuk-hr">
+
+		<h2>Know the signs</h2>
+		<p>There are several signs that labour might be starting, including:
+			<ul>
+				<li>contractions or tightenings</li>
+				<li>a "show", when the plug of mucus from your cervix (entrance to your womb, or uterus) comes away</li>
+				<li>backache</li>
+				<li>an urge to go to the toilet, which is caused by your baby's head pressing on your bowel</li>
+				<li>your waters breaking (rupture of membranes)</li>
+			</ul>
+		</p>
+		<p>The early (latent) stage of labour can take some time.</p>
+		<div class="nhsuk-care-card nhsuk-care-card--non-urgent">
+	  	<div class="nhsuk-care-card__heading-container">
+	    	<h3 class="nhsuk-care-card__heading">
+	    		<span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Call your midwife or maternity unit if:</span></h3>
+	    	<span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+	  	</div>
+	  	<div class="nhsuk-care-card__content">
+	    	<ul>
+	      	<li>your waters break, or</li>
+	      	<li>you're bleeding, or</li>
+	      	<li>your baby is moving less than usual, or</li>
+	      	<li>you're less than 37 weeks pregnant and think you might be in labour</li>
+	    	</ul>
+	    	<p>These signs mean you need to see a midwife or doctor.</p>
+	    </div>
+	    <hr class="nhsuk-hr">
+
+			<h2>Latent phase of labour</h2>
+			<p>The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
+			<p>You'll probably be advised to stay at home during this time. If you go to the hospital or maternity unit, they may suggest you go back home.</p>
+			<p>Find out more about the stages of labour and what you can do at home during the latent phase.</p>
+			<p>Call your midwife if you're unsure or worried about anything.</p>
+
+			{{ pagination({
+        "nextUrl": "/labour-birth/the-start-of-labour/signs-that-labour-has-begun-2",
+        "nextPage": "Symptoms of labour"
+      }) }}
+
+
+  </div>
+</div>
+
+{% endblock %}
