@@ -1,0 +1,93 @@
+{% set pageTitle = "Signs and symptoms of pregnancy" %}
+{% set parentPage = "Am I pregnant?" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_getting_pregnant_am_i_pregnant_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+      {{ contentsList({
+        items: [
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy",
+            text: "Early signs of pregnancy"
+          },
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-2",
+            text: "If you're worried about symptoms",
+            current: "true"
+          },
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-3",
+            text: "If your pregnancy test is negative"
+          }
+        ]
+      }) }}
+      <h2>If you're worried about symptoms</h2>
+      
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>If you have any symptoms you're worried about, talk to your GP or midwife.</p>
+      </div>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li><a href="#think" title="">Vaginal bleeding in pregnancy</a></li>
+          <li><a href="#think" title="">Stomach pain in pregnancy</a></li> 
+          <li><a href="#think" title="">Vomiting and morning sickness in pregnancy</a></li>      
+        </ul>
+      </div>
+
+      <h3>If you're not sure you want to be pregnant</h3>
+      <p>If you're not sure about continuing with the pregnancy, you can discuss this confidentially with a healthcare professional. Your options are:
+        <ul>
+          <li>continuing with the pregnancy and keeping the baby</li>
+          <li>having an abortion</li>
+          <li>continuing with the pregnancy and having the baby adopted</li>
+        </ul>
+      </p>
+      <p>As well as a GP or a nurse at your GP surgery, you can also get accurate, confidential information – from the age of 13 – from the following:
+        <ul>
+          <li>a community sexual health clinic</li>
+          <li>the Marie Stopes website</li>
+          <li>the FPA: pregnant and don't know what to do leaflet</li>
+        </ul>
+      </p>
+      <p>All these services – including community contraceptive clinics – are confidential. If you're 13 or older, the staff won't tell your parents. They'll encourage you to talk to your parents, but they won't force you.</p>
+      <p>If you're under 25 and would prefer advice specifically for young people, the sexual health charity Brook provides a range of services for young people. The Brook website contains information on pregnancy choices. You can also use the Ask Brook 24/7 service.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li><a href="#think" title="">NHS - Abortion</a></li>
+          <li><a href="#think" title="">NHS - Find Sexual health services services</a></li> 
+          <li><a href="#think" title="">Marie Stopes</a> [Ext]</li> 
+          <li><a href="#think" title="">FPA - Pregnant and don't know what to do? </a> [Ext]</li>       
+        </ul>
+      </div>
+
+      {{ pagination({
+        "previousUrl": "/getting-pregnant/am-i-pregnant/signs-of-pregnancy",
+        "previousPage": "Early signs of pregnancy",
+        "nextUrl": "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-3",
+        "nextPage": "If your pregnancy test is negative"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

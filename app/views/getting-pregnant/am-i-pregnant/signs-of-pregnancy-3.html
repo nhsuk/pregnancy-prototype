@@ -1,0 +1,77 @@
+{% set pageTitle = "Signs and symptoms of pregnancy" %}
+{% set parentPage = "Am I pregnant?" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_getting_pregnant_am_i_pregnant_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <h1>
+        {{ pageTitle }}
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom ">
+          {{ parentPage }}
+        </span>
+      </h1>
+
+     {{ contentsList({
+        items: [
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy",
+            text: "Early signs of pregnancy"
+          },
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-2",
+            text: "If you're worried about symptoms"
+          },
+          {
+            href: "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-3",
+            text: "If your pregnancy test is negative",
+            current: "true"
+          }
+        ]
+      }) }}
+      <h2>If your pregnancy test is negative</h2>
+
+      <p>A positive test result is almost certainly correct. A negative result is less reliable. If you get a negative result and still think that you may be pregnant, wait a week and try again.</p>
+      <p>Find out about taking a pregnancy test. </p> 
+      <p>If you are pregnant, use the pregnancy due date calculator to work out when your baby is due.</p>
+
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Relevant links</h3><a name="think">
+        <ul>
+          <li><a href="#think" title="">Doing a pregnancy test</a></li> 
+          <li><a href="#think" title="">Pregnancy due date calculator</li>
+          <li><a href="#think" title="">NHS - Find maternity services near you.</a></li>        
+        </ul>
+      </div>
+
+      {% include "includes/videos/vid_preg_signs.html" %}
+
+      <section>
+        <h2>Useful links</h2><a name="external"></a>
+        <ul><a name="external"></a>
+        <li><a href="#links" title="">Star4Life</a></li>
+        <li><a href="#external">Start4Life's weekly emails</a></li>
+        <li><a href="#think" title="">FPA - Pregnant and don't know what to do? </a> [Ext]</li>                 
+      </ul>
+      <hr class="nhsuk-hr">
+    </section>
+
+      
+
+      {{ pagination({
+        "previousUrl": "/getting-pregnant/am-i-pregnant/signs-of-pregnancy-2",
+        "previousPage": "If you're worried about symptoms"
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}
