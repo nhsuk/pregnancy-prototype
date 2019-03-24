@@ -1,0 +1,55 @@
+{% set pageTitle = "Tips for your birth partner" %}
+{% set parentPage = "The start of labour" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_labour_birth_labour_levelsix.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>
+    	{{ pageTitle }}
+    	<span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+    <p>Whoever your birth partner is – the baby's father, a close friend, partner, or a relative – there are quite a few practical things they can do to help you. </p>
+    <hr class="nhsuk-hr">
+    <h2>Support during labour and birth</h2>
+    <p>Whoever your birth partner is – the baby's father, a close friend, partner, or a relative – there are quite a few practical things they can do to help you.</p>
+		<p>The most important thing your birth partner can do is just be with you.</p>
+		<p>Talk to your birth partner beforehand about the type of birth you'd like and the things you would prefer not to do so they can help support you in your decisions. It can help to go through your birth plan together.</p>
+		<p>There's no way of knowing what your labour is going to be like or how each of you will cope, but there are many ways a partner can help.</p>
+		<p>Whatever kind of birth you're planning for, your birth partner can:
+			<ul>
+				<li>keep you company and help pass the time during the early stages</li>
+				<li>hold your hand, wipe your face and give you sips of water</li>
+				<li>massage your back and shoulders, and help you move about or change position</li>
+				<li>comfort you as your labour progresses and your contractions get stronger</li>
+				<li>remind you how to use relaxation and breathing techniques, perhaps breathing with you if it helps</li>
+				<li>support your decisions, such as the pain relief you choose, even if they're different from what's in your birth plan</li>
+				<li>help you explain to the midwife or doctor what you need – and the other way round – which can help you feel much more in control of the situation</li>
+				<li>tell you what's happening as your baby is being born if you can't see what's going on</li>
+			</ul>
+		</p>
+		<p>Your birth partner may be able to cut the umbilical cord – you can talk to your midwife about this.</p>
+		<p>Your partner can find out more about how to support you during pregnancy and labour in Pregnancy, birth and beyond for partners and dads.</p>
+		<p>Make sure you and your birth partner both know what to pack for the birth, and what to expect at the hospital or maternity unit if you're planning to have your baby there.</p>
+		<div class="nhsuk-navigation__contextual-links">
+      <h3>Relevant links</h3><a name="think">
+      <ul>
+        <li>{% include "includes/links/pregnancy_birth_beyond.html" %}</li>
+        <li><a href="#think" title="">Feelings, relationships and pregnancy</a></li>
+        <li><a href="#think" title="">Sex in pregnancy</a></li>      
+        <li>{% include "includes/links/pack_your_bag.html" %}</li>
+        <li><a href="#think" title="">At the hospital or birth centre</a></li>
+        <li><a href="#think" title="">NHS - find maternity services near you</a></li>
+      </ul>
+    </div>
+	</div>  
+</div>
+{% endblock %}
