@@ -31,42 +31,58 @@
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li>All pregnant women in England are offered an ultrasound 'dating' scan at around 8 to 14 weeks of pregnancy.</li>
-        <li>You'll be offered screening to find the baby's chance of having Down's syndrome, as part of your maternity care between 10 and 14 weeks.</li>
-        <li>Think about possible places to give birth: at home, a midwife-led unit (birth centre) or a hospital – your options will depend on where you live and whether you or your baby have any health problems or other needs.</li>
+        <li>Routine checks and tests you'll be offered in pregnancy</li>
+        <li>Your 12 week pregnancy dating scan</li>
+        <li>Talk to your midwife about screening for Down's, Edwards' and Patau's syndromes</li>
+        <li>Possible places to give birth: at home, a midwife-led unit (birth centre) or a hospital – your options will depend on where you live and whether you or your baby have any health problems or other needs.</li>
+        
+        
       </ul>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3>
         <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li>{% include "includes/links/antenatal_checks.html" %}</li>
+          <li>{% include "includes/links/twelve_week_scan.html" %}</li>
           <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="#" title="">Where to give birth: the options</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
+      <p>You'll be offered screening to find the baby's chance of having Down's syndrome, as part of your maternity care.
       <p>Pregnant women and their babies are at higher risk from flu (influenza) and whooping cough (pertussis). You're advised to have a flu vaccination in pregnancy and whooping cough vaccination in pregnancy to protect you and your baby.</p>
-      <p>Domestic violence during pregnancy puts women and their unborn child in danger of miscarriage, infections and other complications. Abuse often starts in pregnancy, and may be physical, emotional or financial in nature.All pregnant women in the UK are routinely asked if they have experienced domestic violence by their midwife or doctor so they can receive advice and support.</p>
+      <p>Domestic violence during pregnancy puts women and their unborn child in danger of miscarriage, infections and other complications.</p>
+      <p>Abuse often starts in pregnancy, and may be physical, emotional or financial in nature.</p>
+      <p>All pregnant women in the UK are routinely asked if they have experienced domestic violence by their midwife or doctor so they can receive advice and support.</p>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3>
         <ul>
+          <li>{% include "includes/links/test_downs.html" %}</li>
           <li><a href="#" title="">The flu jab in pregnancy</a></li>
           <li><a href="#" title="">Whooping cough vaccination in pregnancy</a></li>
           <li><a href="#" title="">Domestic abuse in pregnancy</a></li>
+          <li><a href="#" title="">NHS - Miscarriage</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>Your baby at {{ pageTitle }}</h2>
-      <p>The ears are starting to develop on the sides of your baby's head, and the ear canals are forming inside the head. If you could look at your baby's face, you'd be able to see an upper lip and 2 tiny nostrils in the nose. The jawbones are developing and already contain all the future milk teeth. The heart is now fully formed. It beats 180 times a minute – that's 2 to 3 times faster than your own heart. </p>
+      <p>The ears are starting to develop on the sides of your baby's head, and the ear canals are forming inside the head.</p>
+      <p>If you could look at your baby's face, you'd be able to see an upper lip and 2 tiny nostrils in the nose.</p>
+      <p>The jawbones are developing and already contain all the future milk teeth.</p>
+      <p>The heart is now fully formed. It beats 180 times a minute – that's 2 to 3 times faster than your own heart.</p>
       <p>The baby is making small, jerky movements that can be seen on an ultrasound scan.</p>
       <hr class="nhsuk-hr">
     </section>
     {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    <section>
+      {% include "includes/link_clusters/early_days_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/paginations/week_ten.html" %}  
+    <hr class="nhsuk-hr">
   </div>
 </div> 
 {% endblock %}

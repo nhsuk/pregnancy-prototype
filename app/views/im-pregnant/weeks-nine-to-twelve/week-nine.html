@@ -17,7 +17,7 @@
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
+    <p>You may also find that your emotions vary – you feel happy one moment and sad the next. Don't worry – these feelings are normal and should settle down.</p>
   </div>
 </div>
 <hr class="nhsuk-hr">
@@ -30,40 +30,49 @@
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Routine checks and tests you'll be offered in pregnancy</li>
+        <li>Find out about the pregnancy (antenatal) care you can expect on the NHS</li>
+
       </ul>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="think">
         <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li>{% include "includes/links/antenatal_checks.html" %}</li>
+          <li>{% include "includes/links/twelve_week_scan.html" %}</li>
           <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="#think" title="">Where to give birth: the options</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
-      <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <p>During this time your breasts will have got bigger, so consider wearing a supportive bra.</p>
+      <p>You may also find that your emotions vary – you feel happy one moment and sad the next.Don't worry – these feelings are normal and should settle down.</p>
+      <p>It's normal to have more vaginal discharge when you're pregnant.But tell your midwife or GP if the discharge smells unpleasant or strange, you feel itchy or sore, or you have pain when you pee. These could be signs of a vaginal infection and need to be checked.</p>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="you"></a>
         <ul>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title="">Feelings, relationships and pregnancy</a></li>
+          <li><a href="#you" title="">Vaginal discharge in pregnancy</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>Your baby at {{ pageTitle }}</h2>
-      <p>Ab illo tempore, ab est sed immemorabili. Tityre, tu patulae recubans sub tegmine fagi dolor. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+      <p>The baby's face is slowly forming. The eyes are bigger and more obvious, and have some colour (pigment) in them. There's a mouth and a tongue with tiny taste buds.</p>
+      <p>The hands and feet are developing – ridges identify where the fingers and toes will be, although they haven't separated out yet.</p>
+      <p>The major internal organs, such as the heart, brain, lungs, kidneys and gut, continue developing.</p>
+      <p>At 9 weeks of pregnancy, the baby has grown to about 22mm long from head to bottom.</p>
       <hr class="nhsuk-hr">
     </section>
-    {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    {% include "includes/videos/vid_bleeding.html" %}
+    <section>
+      {% include "includes/link_clusters/early_days_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/paginations/week_nine.html" %}  
+    <hr class="nhsuk-hr">
   </div>
 </div> 
 {% endblock %}

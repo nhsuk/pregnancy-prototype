@@ -17,7 +17,8 @@
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>Quisque ut dolor gravida, placerat libero vel, euismod. A communi observantia non est recedendum.</p>
+    <p>You'll be offered an ultrasound dating scan between 8 and 11 weeks to calculate your estimated due date (EDD) and find out how many babies you're carrying.</p>
+    <p>All women are offered antenatal screening tests to check if their baby has a higher chance of having a health condition, such as Down's syndrome. It's up to you whether to have screening tests or not – find out what antenatal screening is and what's involved to help you decide what's best for you.</p>
   </div>
 </div>
 <hr class="nhsuk-hr">
@@ -30,40 +31,53 @@
       <h2>Things to think about</h2>
       <p>These are the things that you should consider and need to think about now.</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Make sure you know all the health things you should know when you're pregnant, such as stopping smoking, avoiding alcohol, getting exercise and eating healthily.</li>
+        <li>You'll be offered an ultrasound dating scan between 8 and 11 weeks to calculate your estimated due date (EDD) and find out how many babies you're carrying.</li>
+        <li>All women are offered antenatal screening tests to check if their baby has a higher chance of having a health condition, such as Down's syndrome. It's up to you whether to have screening tests or not – find out what antenatal screening is and what's involved to help you decide what's best for you.</li>
+        <li>Sometimes antenatal screening tests find something to indicate your baby has a higher chance of having a health condition. You'll receive support and advice from your midwife or doctor if this is the case, and they'll discuss your options and next steps with you.</li>
+        <li>You can start thinking about where you'd like to give birth – at home, at a birth centre or in hospital. Your options will depend on your circumstances and what's available in your area.</li>
       </ul>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="think">
         <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li>{% include "includes/links/antenatal_checks.html" %}</li>
+          <li>{% include "includes/links/twelve_week_scan.html" %}</li>
           <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="#think" title="">Where to give birth: the options</a></li>
+          <li><a href="#" title="">Screening tests in pregnancy</a>
+          <li><a href="#think" title="">If antenatal screening tests find something</a></li>
+          <li><a href="#think" title="">Health things you should know in pregnancy</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
-      <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <p>You might notice you're a bit constipated. Not everyone gets constipation in pregnancy, but it's fairly common and can make you feel uncomfortable. </p>
+      <p>You may feel stomach pain or cramps from time to time. These are usually nothing to worry about, and can be caused by constipation, wind or your ligaments growing as your womb gets bigger.</p>
+      <p>But if you have stomach pain that doesn't go away, is severe or you also have bleeding or other symptoms, you need to see your midwife or doctor.</p>
       <div class="nhsuk-navigation__contextual-links">
         <h3>Relevant links</h3><a name="you"></a>
         <ul>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
-          <li><a href="#you" title=""></a></li>
+          <li><a href="#you" title="">Common health problems in pregnancy</a></li>
+          <li><a href="#you" title="">Stomach pain in pregnancy</a></li>
         </ul>
       </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>Your baby at {{ pageTitle }}</h2>
-      <p>Ab illo tempore, ab est sed immemorabili. Tityre, tu patulae recubans sub tegmine fagi dolor. Quae vero auctorem tractata ab fiducia dicuntur.</p>
+      <p>Just 12 weeks after your last period, the foetus is fully formed. All the organs, muscles, limbs and bones are in place, and the sex organs are well developed.</p> 
+      <p>From now on, the baby has to grow and mature.</p>
+      <p>It's too early for you to be able to feel the baby's movements yet, although they'll be moving quite a bit.</p>
       <hr class="nhsuk-hr">
     </section>
-    {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    {% include "includes/videos/vid_screening.html" %}
+    <section>
+      {% include "includes/link_clusters/early_days_external.html" %}
+      <hr class="nhsuk-hr">
+    </section>
+    {% include "includes/paginations/week_twelve.html" %}  
+    <hr class="nhsuk-hr">
   </div>
 </div> 
 {% endblock %}
