@@ -1,0 +1,89 @@
+{% set pageTitle = "How to make a birth plan" %}
+{% set parentPage = "The Birth" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+{% block beforeContent %}
+	{% include "includes/breadcrumbs/breadcrumb_labour_birth_levelfive.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>
+      {{ pageTitle }}
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+    <p>A birth plan is a record of what you would like to happen during your labour and after the birth. You don't have to create a birth plan but, if you would like one, your midwife will be able to help.</p>
+
+<hr class="nhsuk-hr">
+	<h2>Things to consider</h2>
+	<p>You can find out more about the things you need to think about when making a birth plan, such as:
+		<ul>
+			<li>where you can give birth</li>
+			<li>pain relief</li>
+			<li>forceps or ventouse (intervention or instrumental delivery)</li>
+			<li>caesarean section</li>
+			<li>your baby after the birth</li>
+		</ul>
+	</p>
+	<p>You can work out whether there's anything you feel strongly about and might wish to include. </p>
+	<p>You and your partner can also think about what your birth partner can do to support you during labour.</p>
+
+	<div class="nhsuk-navigation__contextual-links">
+      <h3>Relevant links</h3><a name="think">
+      <ul>
+        <li><a href="#think" title="">Where to give birth: the options</a></li>
+        <li>{% include "includes/links/pain_relief.html" %}</li>
+        <li><a href="#think" title="">Forceps or vacuum delivery</a></li>
+        <li><a href="#think" title="">NHS - Caesarean section</a></li>
+        <li><a href="#think" title="">Getting to know your newborn</a></li>
+        <li><a href="#think" title="">{% include "includes/links/tips_for_partners.html" %}</a></li>
+        <li><a href="#think" title="">Download a birth plan template</a></li>
+      </ul>
+    </div>
+    <hr class="nhsuk-hr">
+
+  	<h2>Making your birth plan</h2>
+  	<p>Discussing a birth plan with your midwife gives you the chance to ask questions and find out more about what happens in labour.</p>
+  	<p>It also gives your midwife the chance to get to know you better, and understand your feelings and priorities, and allows you to think about or discuss some things more fully with your partner, friends and relatives.</p>
+  	<p>You can change your mind about your wishes for labour and birth at any time.</p>
+
+  	<div class="nhsuk-navigation__contextual-links">
+      <h3>Relevant links</h3>
+      <ul>
+        <li><a href="#think" title="">Download a birth plan template</a></li>
+      </ul>
+    </div>
+    <hr class="nhsuk-hr">
+
+  	<h2>Your personal circumstances</h2>
+  	<p>Your birth plan is personal to you. It depends on what you want, your medical history, your circumstances and what is available at your maternity service. What may be safe and practical for one pregnant woman may not be a good idea for another.</p>
+  	<p>You might be given a special form for your birth plan, or there may be room in your notes. It's a good idea to keep a copy of your birth plan with you.</p>
+  	<p>The maternity team who care for you during labour will discuss it with you so they know what you want.</p>
+  	<div class="nhsuk-navigation__contextual-links">
+      <h3>Relevant links</h3>
+      <ul>
+        <li><a href="#" title="">Download a birth plan template</a></li>
+      </ul>
+    </div>
+    <hr class="nhsuk-hr">
+
+  	<h2>Be flexible</h2>
+  	<p>You need to be flexible and prepared to do things differently from your birth plan if complications arise with you or your baby, or if facilities such as a birth pool aren't available.</p>
+  	<p>The maternity team will tell you what they advise in your particular circumstances. Don't hesitate to ask questions if you need to.</p>
+  	<div class="nhsuk-navigation__contextual-links">
+      <h3>Relevant links</h3>
+      <ul>
+        <li><a href="#" title="">Download a birth plan template</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock %}
