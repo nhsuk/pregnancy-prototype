@@ -46,12 +46,11 @@ The site was built to answer certain, specific questions
 
 * Task 3: Can the user find their way to Labour and birth > Pack your bag OR Pain relief OR Signs that labour has begun OR How to make a birth plan
 
-* Questions
-..* Can they understand the structure of the content?
-..* Do they understand what information they can get?
-..* Is any of the content worrying? Is any of the content confusing?
-..* Is it clear that the contextual links relate to the content above?
-..* Are the contextual link boxes easy to understand and read?
-..* Are the breadcrumbs confusing?
-..* Are the sub heading (parent canons) confusing? Should they be clickable?
-  
+## Questions
+* Can they understand the structure of the content?
+* Do they understand what information they can get?
+* Is any of the content worrying? Is any of the content confusing?
+* Is it clear that the contextual links relate to the content above?
+* Are the contextual link boxes easy to understand and read?
+* Are the breadcrumbs confusing?
+* Are the sub heading (parent canons) confusing? Should they be clickable?
