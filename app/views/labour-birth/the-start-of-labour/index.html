@@ -23,7 +23,8 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       {{ pageTitle }}
       <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
     </h1>
-    <p>xxxxxx</p>
+    <p>
+The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
     <hr class="nhsuk-hr">
   </div>
 </div>
@@ -35,19 +36,19 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
         <ul class="nhsuk-list nhsuk-list-links">
           <li>{% include "includes/links/signs_labour.html" %}</li>
+          <li>{% include "includes/links/pain_relief.html" %}</li>
           <li>{% include "includes/links/birth_plan.html" %}</li>
-          <li><a href="#links">What happens during labour and birth</a></li>       
-          <li><a href="#links">Premature labour</a></li>
-          <li>{% include "includes/links/pack_your_bag.html" %}</li>    
+          <li>{% include "includes/links/pack_your_bag.html" %}</li>
+          <li>{% include "includes/links/tips_for_partners.html" %}</li>      
         </ul>
       </div>
-      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
         <ul class="nhsuk-list nhsuk-list-links">
-          <li>{% include "includes/links/pain_relief.html" %}</li>
-          <li><a href="#links">At the hospital or birth centre</a></li>
-          <li><a href="#links"></a></li>
-          <li>{% include "includes/links/tips_for_partners.html" %}</li>
+          <li><a href="#links">At the hospital or birth centre</a></li><li> 
+          <li><a href="#links">What happens during labour and birth</a></li>
+          <a href="#links">Premature labour</a></li>     
           <li><a href="#links" title="">Pregnancy, birth and beyond for dads and partners</a></li>
+          
         </ul>
       </div>
     </div>
@@ -55,6 +56,16 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
 </div> 
 <hr class="nhsuk-hr">
 
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Useful topics</h2>
+   <div class="nhsuk-grid-row nhsuk-promo-group"> 
+      {% include "includes/promos/promo_preparing.html" %} 
+      {% include "includes/promos/promo_newborns.html" %}
+      {% include "includes/promos/promo_newparents.html" %}     
+    </div>
+  </div>
+</div>
 
 
 
