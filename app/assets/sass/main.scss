@@ -81,12 +81,14 @@
 .nhsuk-week__pagination{
 	display:flex;
 	padding:0;
+
 	li{
 		list-style-type: none;
-		width:20%;
+		flex-wrap:wrap;
+		width:25%;
 		margin:0 1rem 0 0;
 		&:last-child{
-			margin:0;
+			margin:0 0 0 0;
 		}
 		a{
 			text-decoration: underline;
@@ -115,6 +117,45 @@
 		}
 	}
 
+}
+/*$mq-breakpoints: (
+  mobile:  320px,
+  tablet:  641px,
+  desktop: 769px,
+  large-desktop: 990px
+);*/
+@include mq($until: tablet) {
+	.nhsuk-week__pagination{
+		flex-wrap:wrap;
+		li{
+			width:45%;
+			margin:0 0.5rem 0.5rem 0;
+
+			&:last-child{
+				margin:0 0 0.5rem 0;
+			}
+			&:nth-child(even) {
+  				//border:1px solid red;
+  				margin:0 0 0.5rem 0;
+			}
+		}
+		nhsuk-promo__link-wrapper{
+			padding:0.5rem 0.5rem;
+			h3, h4{
+				@include nhsuk-typography-responsive(14);
+				line-height:1.2rem!important	;
+			}
+			h4{
+
+			}
+		}
+	}
+
+}
+@include mq($until: tablet) {
+	.nhsuk-week__pagination{
+		
+	}
 }
 
 // ==============================
