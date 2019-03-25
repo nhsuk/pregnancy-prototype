@@ -22,8 +22,7 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h1>{{ pageTitle }}</h1>
-      <p>Whatever you want to know about getting pregnant, being pregnant and giving birth you should find it here. You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
-      <p>You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
+      <p>Whatever you want to know about getting pregnant, being pregnant and giving birth you should find it here. You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore. You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.</p>
     </div>
   </div>
   <hr class="nhsuk-hr">
@@ -79,13 +78,13 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
       <div class="nhsuk-grid-row nhsuk-promo-group">
         {% include "includes/promos/promo_antenatalcare.html" %}
         {% include "includes/promos/promo_testsandscans.html" %} 
+        {% include "includes/promos/promo_helpgetting.html" %} 
       </div>
        <div class="nhsuk-grid-row nhsuk-promo-group">
+        {% include "includes/promos/promo_preginduced.html" %}
         {% include "includes/promos/promo_preparing.html" %}  
         {% include "includes/promos/promo_food.html" %} 
-        {% include "includes/promos/promo_newborns.html" %}
       </div>
-      
     </div>
   </div>
 <hr class="nhsuk-hr">
@@ -98,7 +97,8 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
                 <li>{% include "includes/links/birth_plan.html" %}</li>
                 <li>{% include "includes/links/signs_pregnancy.html" %}</li>
                 <li>{% include "includes/links/antenatal_checks.html" %}</li>
-                <li>{% include "includes/links/twelve_week_scan.html" %}</li>    
+                <li>{% include "includes/links/twelve_week_scan.html" %}</li>
+                <li><a href="#links">Foods to avoid</a></li>    
               </ul>
           </div>
           <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
@@ -106,7 +106,9 @@ Add your custom CSS/Sass to /app/assets/sass/main.scss
               <li>{% include "includes/links/pregnancy_to_do.html" %}</li>
               <li>{% include "includes/links/pain_relief.html" %}</li>
               <li>{% include "includes/links/signs_labour.html" %}</li>
-              <li><a href="#links">Foods to avoid</a></li>
+              <li>{% include "includes/links/tips_for_partners.html" %}</li>
+              
+              <li><a href="#links">What happens during labour and birth</a></li> 
             </ul>
           </div>
         </div>
