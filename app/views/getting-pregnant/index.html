@@ -1,0 +1,79 @@
+{% set pageTitle = "Getting pregnant" %}
+{% set parentPage = "Pregnancy" %}
+{% extends 'layouts/layout-nhsuk.html' %}
+
+
+<!-- Set the page title inside this block -->
+{% block pageTitle %}
+  NHS.UK - {{ parentPage }} - {{ pageTitle }}
+{% endblock %}
+
+<!-- Breadcrumb goes inside this block -->
+{% block beforeContent %}
+  {% include "includes/breadcrumbs/breadcrumb_levelfour.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>
+      {{ pageTitle }}
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">{{ parentPage }}</span>
+    </h1>
+    <p>Whatever you want to know about getting pregnant, you should find it here.</p>
+  </div>
+</div>
+<hr class="nhsuk-hr">
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="#">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Secrets to success</h3>
+                <p class="nhsuk-promo__description">A healthy diet is an important part of a healthy lifestyle at any time, but is especially vital if you're planning a pregnancy. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/getting-pregnant/am-i-pregnant/">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Am I pregnant?</h3>
+                <p class="nhsuk-promo__description">All the signs and symptoms of pregnancy plus when to get a test.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item  nhs-promo__level-three">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="#">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Problems getting pregnant</h3>
+                <p class="nhsuk-promo__description">Information about trying to get pregnant. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<hr class="nhsuk-hr">
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">  
+    {% include "includes/link_clusters/getting_general.html" %}
+  </div>
+</div> 
+<hr class="nhsuk-hr">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    {% include "includes/promo_clusters/getting_general.html" %}
+  </div>
+</div>
+<hr class="nhsuk-hr">
+
+{% endblock %}
