@@ -103,6 +103,7 @@
 		h3{
 			@include nhsuk-typography-responsive(16);
 			text-transform: uppercase;
+			font-weight: normal;
 			}
 		h4{
 			@include nhsuk-typography-responsive(16);
