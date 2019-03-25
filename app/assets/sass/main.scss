@@ -119,12 +119,7 @@
 	}
 
 }
-/*$mq-breakpoints: (
-  mobile:  320px,
-  tablet:  641px,
-  desktop: 769px,
-  large-desktop: 990px
-);*/
+
 @include mq($until: tablet) {
 	.nhsuk-week__pagination{
 		flex-wrap:wrap;
@@ -151,13 +146,8 @@
 			}
 		}
 	}
+}
 
-}
-@include mq($until: tablet) {
-	.nhsuk-week__pagination{
-		
-	}
-}
 
 // ==============================
 // carousel week navigation
