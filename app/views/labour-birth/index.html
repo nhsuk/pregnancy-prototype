@@ -57,109 +57,44 @@
     <hr class="nhsuk-hr">
     <div class="block-links_list_group">
       <h2>Popular pages</h2><a name="links"></a>
-        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
-            <ul class="nhsuk-list nhsuk-list-links">
-              <li>{% include "includes/links/signs_labour.html" %}</li>
-              <li>{% include "includes/links/pain_relief.html" %}</li>
-              <li>{% include "includes/links/birth_plan.html" %}</li>
-              <li><a href="#links" title="">Pregnancy, birth and beyond for dads and partners</a></li>
-              <li><a href="#links">What happens during labour and birth</a></li>       
-              <li><a href="#links">Premature labour</a></li>    
-            </ul>
-        </div>
-        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
-          <ul class="nhsuk-list nhsuk-list-links">
-            <li>{% include "includes/links/pack_your_bag.html" %}</li>
-            <li>{% include "includes/links/tips_for_partners.html" %}</li>
-            <li><a href="#links">At the hospital or birth centre</a></li>
-            <li><a href="#links">What happens straight after the birth?</a></li>
-            <li><a href="#links">Premature or ill babies</a></li>
-          </ul>
-        </div>
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li>{% include "includes/links/signs_labour.html" %}</li>
+          <li>{% include "includes/links/pain_relief.html" %}</li>
+          <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li><a href="#links">At the hospital or birth centre</a></li>
+          <li><a href="#links">What happens during labour and birth</a></li>       
+          <li><a href="#links">Premature labour</a></li>    
+        </ul>
       </div>
-      
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirdsnhsuk-grid-column-one-half">
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li>{% include "includes/links/pack_your_bag.html" %}</li>
+          <li>{% include "includes/links/tips_for_partners.html" %}</li>
+          <li><a href="#links">What happens straight after the birth?</a></li>
+          <li><a href="#links">Premature or ill babies</a></li>
+          <li><a href="#links" title="">Pregnancy, birth and beyond for dads and partners</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div> 
 <hr class="nhsuk-hr">
+
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <h2>{{ pageTitle }} topics</h2>
 
-    <div class="nhsuk-grid-row nhsuk-promo-group">    
-     <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Preparing for birth</h3>
-              <p class="nhsuk-promo__description">From pain relief, what to pack for the birth, to what happens whilst you're in labour.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Pain relief</h3>
-              <p class="nhsuk-promo__description">It can help to learn about all the ways you can relieve the pain for you and whoever is going to be with you during your labour.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Complications during birth</h3>
-              <p class="nhsuk-promo__description">From breech birth, caesarean section and forcep deliveries.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-        
+    <div class="nhsuk-grid-row nhsuk-promo-group"> 
+      {% include "includes/promos/promo_preparing.html" %} 
+      {% include "includes/promos/promo_newborns.html" %}
+      {% include "includes/promos/promo_newparents.html" %}     
     </div>
 
     <div class="nhsuk-grid-row nhsuk-promo-group">
-      
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">New parents</h3>
-              <p class="nhsuk-promo__description">Everything from getting breastfeeding started, to washing and bathing your baby and changing their nappy</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Twins</h3>
-              <p class="nhsuk-promo__description">Find out all you need to know about twins and multiple births.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="">
-            <div class="nhsuk-promo__content">
-              <h3 class="nhsuk-promo__heading">Newborns</h3>
-              <p class="nhsuk-promo__description">Get to know your newborn and find out what to expect in the first few days.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      
-      
-      
+      {% include "includes/promos/promo_benefits.html" %}
+      {% include "includes/promos/promo_twins.html" %} 
+      {% include "includes/promos/promo_pregwrong.html" %}   
     </div>
     <hr class="nhsuk-hr">
   </div>
