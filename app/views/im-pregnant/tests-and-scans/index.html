@@ -25,47 +25,46 @@
     </div>
   </div>
 <hr class="nhsuk-hr">
-  
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <div class="block-links_list_group">
-        <h2>All pages about {{ pageTitle }}</h2><a name="links"></a>
-          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
-            <h3>Scans</h3>
-              <ul class="nhsuk-list nhsuk-list-links">
-                <li>{% include "includes/links/twelve_week_scan.html" %}</li>           
-                <li>{% include "includes/links/test_downs.html" %}</li>
-                <li><a href="#links">The mid-pregnancy scan</q></li>
-                <li><a href="#links">General pregnancy ultrasound scans</a></li>    
-              </ul>
-          </div>
-          <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
-            <h3>Tests</h3>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <div class="block-links_list_group">
+      <h2>All pages about tests and scans</h2><a name="links"></a>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+          <h3>Scans</h3>
             <ul class="nhsuk-list nhsuk-list-links">
-              <li><a href="#links">Routine checks and tests</a></li> 
-              <li><a href="#links">If antenatal screening tests find something</a></li>
-              <li><a href="#nhsuk-list-links">Amniocentesis tests</a></li>
-              <li><a href="#links">Chorionic villus sampling</a></li>
+              <li>{% include "includes/links/twelve_week_scan.html" %}</li>           
+              <li>{% include "includes/links/test_downs.html" %}</li>
+              <li><a href="#links">The mid-pregnancy scan</q></li>
+              <li><a href="#links">Ultrasound scans in pregnancy</a></li>    
             </ul>
-          </div>
         </div>
-
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+          <h3>Tests</h3>
+          <ul class="nhsuk-list nhsuk-list-links">
+            <li><a href="#links">Routine checks and tests</a></li>
+             <li><a href="#links">Screening tests in pregnancy</a></li> 
+            <li><a href="#links">If antenatal screening tests find something</a></li>
+            <li><a href="#nhsuk-list-links">Amniocentesis tests</a></li>
+            <li><a href="#links">Chorionic villus sampling</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div> 
 <hr class="nhsuk-hr">
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <h2>Relevant topics</h2><a name="topic"></a>
-      <div class="nhsuk-grid-row nhsuk-promo-group">
-        {% include "includes/promos/promo_antenatalcare.html" %}
-        {% include "includes/promos/promo_preginduced.html" %} 
-        {% include "includes/promos/promo_food.html" %} 
-      </div>
-       <div class="nhsuk-grid-row nhsuk-promo-group">
-        
-      </div>
-      <hr class="nhsuk-hr">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Useful topics</h2><a name="topic"></a>
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      {% include "includes/promos/promo_antenatalcare.html" %}
+      {% include "includes/promos/promo_safety.html" %} 
+      {% include "includes/promos/promo_pregnancygoeswrong.html" %} 
     </div>
-  </div>     
+     <div class="nhsuk-grid-row nhsuk-promo-group">
+      
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
+</div>     
 
 {% endblock %}
