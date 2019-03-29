@@ -119,6 +119,13 @@
 	}
 
 }
+.nhsuk-promo__link-wrapper-pregnancy{
+	box-shadow: 0 4px 0 0 $color_nhsuk-blue!important;
+	h3{
+		//@include nhsuk-typography-responsive(22);
+		//font-weight: normal
+	}
+}
 
 @include mq($until: tablet) {
 	.nhsuk-week__pagination{
@@ -190,27 +197,28 @@
 		.nhsuk-promo__link-wrapper{	
 			height:100%;
 			padding:1rem;
-			background-color:$color_nhsuk-blue;	
-			box-shadow: 0 4px 0 0 darken($color_nhsuk-blue,10%);
+			background-color:lighten($color_nhsuk-blue,62%);
+				
+			box-shadow: 0 8px 0 0 $color_nhsuk-blue;
 			&:focus{
-				color:white;
+				color:$color_nhsuk-black;
 				h3,h4, .nhsuk-promo__description{
-					color:white;
+					color:$color_nhsuk-black;
 				}
 			}	
 		}
 	}
 	.nhsuk-carousel__pane-milestone{
 		.nhsuk-promo__link-wrapper{
-			background-color:$color_nhsuk-green;
-			box-shadow: 0 4px 0 0 darken($color_nhsuk-green,10%);	
+			background-color:$color_nhsuk-white;
+			box-shadow: 0 8px 0 0 $color_nhsuk-blue;
+			.nhsuk-promo__description{
+				font-weight: 600;
+			}	
 		}
-	}
-
-	
-	
+	}	
 	a, hgroup, .nhsuk-promo__description{
-			color:white;
+			color:$color_nhsuk-black;
 		}
 	hgroup{
 		margin-bottom: 1rem;
@@ -230,6 +238,8 @@
 		@include nhsuk-typography-responsive(14);
 	}
 }
+
+
 
 // ==============================
 // slick slider css
