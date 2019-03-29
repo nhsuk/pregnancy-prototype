@@ -50,26 +50,30 @@
 			<li>have a warm bath</li>
 		</ul>
 	</p>
-	<div class="nhsuk-navigation__contextual-links">
-    <h3>Useful links</h3>
-    <ul>
-      <li>{% include "includes/links/tips_for_partners.html" %}</li>
-      <li><a href="javascript:void(0);" title="">What happens during labour and birth</a></li>
-      <li>{% include "includes/links/pain_relief.html" %}</li>
-    </ul>
-  </div>
   <hr class="nhsuk-hr">
 
 	</section>
   	{% include "includes/videos/vid_labour.html" %}
   <section>
   <section>
-    <h2>Useful links</h2>
-    <ul>
-      <li><a href="javascript:void(0);" title="">Start4Life</a></li>
-      <li><a href="javascript:void(0);">Start4Life's weekly emails</a></li>
-      <li><a href="javascript:void(0);" title="">NICE - Guidance on the care of women and their babies during labour and childbirth</a></li>
-    </ul>
+    <div class="nhsuk-navigation__contextual-links">
+      <h3>Related pages</h3>
+      <ul>
+        <li>{% include "includes/links/tips_for_partners.html" %}</li>
+        <li><a href="javascript:void(0);" title="">What happens during labour and birth</a></li>
+        <li>{% include "includes/links/pain_relief.html" %}</li>
+        <li><a href="javascript:void(0);" title="">At the hospital or birth centre</a></li>
+        <li><a href="javascript:void(0);" title="">What happens during labour and birth</a></li>
+      </ul>
+    </div>
+    <h2>External links</h2>
+    <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+      <ul class="nhsuk-list nhsuk-list-links">
+         <li><a href="javascript:void(0);" title="">Start4Life</a></li>
+        <li><a href="javascript:void(0);">Start4Life's weekly emails</a></li>
+        <li><a href="javascript:void(0);" title="">NICE - Guidance on the care of women and their babies during labour and childbirth</a></li>
+      </ul>
+    </div>
   </section>
 
 	{{ pagination({

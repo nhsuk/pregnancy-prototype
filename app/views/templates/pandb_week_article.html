@@ -34,27 +34,12 @@
         <li></li>
         <li></li>
       </ul>
-      <div class="nhsuk-navigation__contextual-links">
-        <h3>Useful links</h3>
-        <ul>
-          <li>{% include "includes/links/birth_plan.html" %}</li>
-          <li>{% include "includes/links/test_downs.html" %}</li>
-          <li><a href="javascript:void(0);" title="">Where to give birth: the options</a></li>
-        </ul>
-      </div>
       <hr class="nhsuk-hr">
     </section>
     <section>
       <h2>You at {{ pageTitle }}</h2>
       <p>Excepteur sint obcaecat cupiditat non proident culpa. Pellentesque habitant morbi tristique senectus et netus. Curabitur est gravida et libero vitae dictum. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-      <div class="nhsuk-navigation__contextual-links">
-        <h3>Useful links</h3>
-        <ul>
-          <li><a href="javascript:void(0);" title=""></a></li>
-          <li><a href="javascript:void(0);" title=""></a></li>
-          <li><a href="javascript:void(0);" title=""></a></li>
-        </ul>
-      </div>
+      
       <hr class="nhsuk-hr">
     </section>
     <section>
@@ -63,7 +48,17 @@
       <hr class="nhsuk-hr">
     </section>
     {% include "includes/videos/vid_domestic_abuse.html" %}
-    {% include "includes/link_clusters/early_days_external.html" %}
+    <section>
+      <div class="nhsuk-navigation__contextual-links">
+        <h3>Related pages</h3>
+        <ul>
+         <li>{% include "includes/links/birth_plan.html" %}</li>
+          <li>{% include "includes/links/test_downs.html" %}</li>
+          <li><a href="javascript:void(0);" title="">Where to give birth: the options</a></li>
+        </ul>
+      </div>
+      {% include "includes/link_clusters/early_days_external.html" %}
+    </section>
   </div>
 </div> 
 {% endblock %}
